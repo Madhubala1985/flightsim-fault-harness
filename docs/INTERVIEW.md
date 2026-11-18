@@ -1,7 +1,6 @@
 # Interview guide: flightsim-fault-harness
 
-Eight questions an interviewer could ask about this repo, with answers, followed by
-the things you should be able to say about the repo without looking.
+
 
 ## Questions and answers
 
