@@ -1,0 +1,32 @@
+{
+  "campaign7-run020-stuck_airspeed": {
+    "fault_type": "stuck_airspeed",
+    "observed_ttd_s": 3.4,
+    "max_ttd_s": 10.0,
+    "max_pre_onset_alarms": 0
+  },
+  "campaign7-run033-altimeter_bias": {
+    "fault_type": "altimeter_bias",
+    "observed_ttd_s": 0.4,
+    "max_ttd_s": 10.0,
+    "max_pre_onset_alarms": 0
+  },
+  "campaign7-run017-altimeter_drift": {
+    "fault_type": "altimeter_drift",
+    "observed_ttd_s": 4.1,
+    "max_ttd_s": 10.0,
+    "max_pre_onset_alarms": 0
+  },
+  "campaign7-run041-sensor_dropout": {
+    "fault_type": "sensor_dropout",
+    "observed_ttd_s": 3.2,
+    "max_ttd_s": 10.0,
+    "max_pre_onset_alarms": 0
+  },
+  "campaign7-run030-engine_power_loss": {
+    "fault_type": "engine_power_loss",
+    "observed_ttd_s": 2.8,
+    "max_ttd_s": 10.0,
+    "max_pre_onset_alarms": 0
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "coeffs": {
+    "airspeed": [
+      -4.956729004469274,
+      -0.11426576391122287,
+      0.002047883734644401,
+      -0.0399110928444751
+    ],
+    "energy": [
+      -1230.5682742054012,
+      0.8273899515003578,
+      -4.80776488873625
+    ]
+  },
+  "scales": {
+    "airspeed": 0.1275609977731049,
+    "energy": 23.512049212933416,
+    "alt_rate": 0.5117297102747352
+  },
+  "thresholds": {
+    "staleness": 1.0,
+    "alt_rate": 7.748023767184357,
+    "airspeed": 5.262932220956116,
+    "energy": 4.413005905546836,
+    "iforest": 0.21464385108260864
+  },
+  "persistence": 5,
+  "staleness_s": 3.0,
+  "target_fa_per_hour": 1.0,
+  "train_runs": [
+    "campaign7-run018",
+    "campaign7-run019",
+    "campaign7-run028",
+    "campaign7-run029",
+    "campaign7-run031",
+    "campaign7-run045",
+    "campaign7-run046"
+  ],
+  "val_runs": [
+    "campaign7-run002",
+    "campaign7-run003",
+    "campaign7-run006",
+    "campaign7-run009",
+    "campaign7-run012",
+    "campaign7-run016"
+  ]
+}

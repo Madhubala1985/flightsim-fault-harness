@@ -1,0 +1,12 @@
+{
+  "faults": [
+    {
+      "type": "altimeter_bias",
+      "onset_s": 146.1,
+      "duration_s": 51.3,
+      "magnitude": 381.843,
+      "end_s": 197.39999999999998,
+      "target": "sensor"
+    }
+  ]
+}

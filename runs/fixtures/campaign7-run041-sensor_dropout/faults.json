@@ -1,0 +1,12 @@
+{
+  "faults": [
+    {
+      "type": "sensor_dropout",
+      "onset_s": 207.2,
+      "duration_s": 115.9,
+      "magnitude": 0.0,
+      "end_s": 323.1,
+      "target": "sensor"
+    }
+  ]
+}

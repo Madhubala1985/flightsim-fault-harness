@@ -1,0 +1,164 @@
+{
+  "run_id": "campaign7-run033",
+  "created_utc": "2026-11-18T12:06:04+00:00",
+  "fsfh_version": "0.1.0",
+  "jsbsim_version": "1.3.3",
+  "seed": 1860940472,
+  "scenario": {
+    "name": "basic",
+    "aircraft": "c172x",
+    "duration_s": 660.0,
+    "initial_altitude_ft": 5000.0,
+    "initial_heading_deg": 0.0,
+    "initial_airspeed_kts": 100.0,
+    "segments": [
+      {
+        "start_s": 0.0,
+        "altitude_ft": 6000.0,
+        "heading_deg": 0.0,
+        "airspeed_kts": 100.0
+      },
+      {
+        "start_s": 200.0,
+        "altitude_ft": 6000.0,
+        "heading_deg": 90.0,
+        "airspeed_kts": 100.0
+      },
+      {
+        "start_s": 320.0,
+        "altitude_ft": 6000.0,
+        "heading_deg": 0.0,
+        "airspeed_kts": 100.0
+      },
+      {
+        "start_s": 440.0,
+        "altitude_ft": 5000.0,
+        "heading_deg": 0.0,
+        "airspeed_kts": 100.0
+      }
+    ]
+  },
+  "sim_dt_s": 0.008333333333333333,
+  "log_hz": 10,
+  "trim": {
+    "elevator": 0.0,
+    "aileron": -0.07494463857461386,
+    "throttle": 0.7921422691318861
+  },
+  "autopilot_gains": {
+    "alt_to_vs": 3.0,
+    "vs_climb_max_fpm": 400.0,
+    "vs_descent_max_fpm": 500.0,
+    "vs_kp": 0.06,
+    "vs_ki": 0.01,
+    "pitch_rate_damping": 2.0,
+    "hdg_to_bank": 1.0,
+    "bank_max_deg": 20.0,
+    "bank_kp": 0.01,
+    "bank_ki": 0.003,
+    "roll_rate_damping": 0.2,
+    "ias_kp": 0.03,
+    "ias_ki": 0.002
+  },
+  "sensor_specs": [
+    {
+      "name": "airspeed_kts",
+      "source": "ias_kts",
+      "noise_sd": 0.5,
+      "bias_sd": 1.0,
+      "quant": 0.1,
+      "lag_s": 0.0,
+      "wrap_360": false
+    },
+    {
+      "name": "altitude_ft",
+      "source": "altitude_ft",
+      "noise_sd": 3.0,
+      "bias_sd": 10.0,
+      "quant": 1.0,
+      "lag_s": 0.0,
+      "wrap_360": false
+    },
+    {
+      "name": "vertical_speed_fpm",
+      "source": "vs_fpm",
+      "noise_sd": 20.0,
+      "bias_sd": 10.0,
+      "quant": 10.0,
+      "lag_s": 2.0,
+      "wrap_360": false
+    },
+    {
+      "name": "pitch_deg",
+      "source": "pitch_deg",
+      "noise_sd": 0.1,
+      "bias_sd": 0.2,
+      "quant": 0.01,
+      "lag_s": 0.0,
+      "wrap_360": false
+    },
+    {
+      "name": "roll_deg",
+      "source": "roll_deg",
+      "noise_sd": 0.1,
+      "bias_sd": 0.2,
+      "quant": 0.01,
+      "lag_s": 0.0,
+      "wrap_360": false
+    },
+    {
+      "name": "heading_deg",
+      "source": "heading_deg",
+      "noise_sd": 0.3,
+      "bias_sd": 0.5,
+      "quant": 0.1,
+      "lag_s": 0.0,
+      "wrap_360": true
+    },
+    {
+      "name": "rpm",
+      "source": "rpm",
+      "noise_sd": 5.0,
+      "bias_sd": 5.0,
+      "quant": 10.0,
+      "lag_s": 0.0,
+      "wrap_360": false
+    }
+  ],
+  "truth_columns": [
+    "t_s",
+    "altitude_ft",
+    "ias_kts",
+    "vs_fpm",
+    "roll_deg",
+    "pitch_deg",
+    "heading_deg",
+    "p_rad_s",
+    "q_rad_s",
+    "r_rad_s",
+    "rpm",
+    "alpha_deg",
+    "nz_g",
+    "lat_deg",
+    "lon_deg",
+    "elevator_cmd",
+    "aileron_cmd",
+    "throttle_cmd",
+    "alt_cmd_ft",
+    "heading_cmd_deg",
+    "ias_cmd_kts",
+    "vs_cmd_fpm",
+    "bank_cmd_deg"
+  ],
+  "sensor_columns": [
+    "t_s",
+    "airspeed_kts",
+    "altitude_ft",
+    "vertical_speed_fpm",
+    "pitch_deg",
+    "roll_deg",
+    "heading_deg",
+    "rpm"
+  ],
+  "n_samples": 6600
+}

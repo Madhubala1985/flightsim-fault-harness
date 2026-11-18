@@ -1,0 +1,12 @@
+{
+  "faults": [
+    {
+      "type": "engine_power_loss",
+      "onset_s": 125.6,
+      "duration_s": 59.0,
+      "magnitude": 0.708,
+      "end_s": 184.6,
+      "target": "aircraft"
+    }
+  ]
+}

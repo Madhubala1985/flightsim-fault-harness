@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "flightsim-fault-harness: a fault-injection and detection test bench on JSBSim"
+authors:
+  - name: "Madhubala1985"
+year: 2026
+version: 0.5.0
+license: MIT
+repository-code: "https://github.com/Madhubala1985/flightsim-fault-harness"

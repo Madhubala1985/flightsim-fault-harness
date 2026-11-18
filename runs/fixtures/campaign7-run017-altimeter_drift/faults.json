@@ -1,0 +1,12 @@
+{
+  "faults": [
+    {
+      "type": "altimeter_drift",
+      "onset_s": 253.2,
+      "duration_s": 25.2,
+      "magnitude": 4.855,
+      "end_s": 278.4,
+      "target": "sensor"
+    }
+  ]
+}
