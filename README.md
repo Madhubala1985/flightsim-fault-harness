@@ -133,9 +133,12 @@ _Triage section skipped: triage cache miss in offline mode: eb12cfbd95409733b4fa
   noise with no kinematic consequence, is mostly missed. The confusion table
   above shows this for `attitude_noise_burst`.
 - **A fault the autopilot hides.** The autopilot flies on truth, so a sensor
-  fault never changes the flight. An aircraft fault that the autopilot
-  compensates for well (mild control lag in cruise) leaves little trace in
-  the sensors.
+  fault never changes the flight. This is deliberate: it isolates sensor
+  faults from aircraft faults for scoring — if the autopilot flew on faulted
+  sensors, every sensor fault would also become a trajectory fault and the
+  two classes could not be separated. Closing the loop on sensed values is
+  the natural next step. An aircraft fault that the autopilot compensates
+  for well (mild control lag in cruise) leaves little trace in the sensors.
 - **Anything before the first alarm.** The triage agent only receives windows
   that a detector flagged, so its accuracy is conditional on detection.
 
