@@ -74,32 +74,34 @@ and `triage_cache/`. Nothing is typed by hand. The per-run flight table is in
 [`results/runs.md`](results/runs.md); the figure is `results/confusion.png`.
 
 <!-- eval:start -->
-### Detection per fault type (41 faulted runs, any detector)
+### Detection per fault type (102 faulted runs, any detector)
 
-| fault_type | runs | detection_rate | median_ttd_s | pre_onset_false_alarms |
-|---|---|---|---|---|
-| altimeter_bias | 3 | 1.00 | 0.50 | 1 |
-| altimeter_drift | 6 | 1.00 | 8.65 | 1 |
-| attitude_noise_burst | 4 | 0.25 | 118.60 | 1 |
-| control_lag | 6 | 1.00 | 11.45 | 1 |
-| engine_power_loss | 7 | 1.00 | 3.60 | 0 |
-| sensor_dropout | 8 | 1.00 | 3.30 | 1 |
-| stuck_airspeed | 7 | 1.00 | 3.50 | 3 |
+| fault_type | runs | detection_rate | median_ttd_s | pre_onset_false_alarms | pre_onset_per_hour |
+|---|---|---|---|---|---|
+| altimeter_bias | 12 | 1.00 | 0.50 | 2 | 2.26 |
+| altimeter_drift | 13 | 1.00 | 5.80 | 0 | 0.00 |
+| attitude_noise_burst | 15 | 0.07 | 118.60 | 2 | 1.47 |
+| control_lag | 11 | 1.00 | 8.80 | 0 | 0.00 |
+| engine_power_loss | 19 | 1.00 | 4.10 | 1 | 0.57 |
+| sensor_dropout | 20 | 1.00 | 3.30 | 1 | 0.66 |
+| stuck_airspeed | 12 | 1.00 | 3.50 | 1 | 0.82 |
 
 Time-to-detect is measured from fault onset; a run counts as detected if an alarm starts between onset and 10 s after the fault ends.
 
-### False alarms on held-out nominal runs (6 runs, 1.10 flight hours)
+### False alarms on held-out nominal runs (14 runs, 2.57 flight hours)
 
 | detector | events | per_hour |
 |---|---|---|
 | alt_rate | 0 | 0.00 |
-| airspeed | 0 | 0.00 |
+| airspeed | 5 | 1.95 |
 | energy | 0 | 0.00 |
 | staleness | 0 | 0.00 |
 | iforest | 0 | 0.00 |
-| any | 0 | 0.00 |
+| any | 5 | 1.95 |
 
 Held-out = nominal runs used neither for training nor for threshold validation.
+
+Pooled estimate ('any' detector) over all fault-free time — 2.57 held-out nominal hours plus 8.37 pre-onset hours on faulted runs: 12 alarm events in 10.94 hours, about 1.1 per hour.
 
 ### Which detector fires for which fault (fraction of runs detected)
 
@@ -107,11 +109,11 @@ Held-out = nominal runs used neither for training nor for threshold validation.
 |---|---|---|---|---|---|---|
 | altimeter_bias | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 | 1.00 |
 | altimeter_drift | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 | 1.00 |
-| attitude_noise_burst | 0.00 | 0.00 | 0.00 | 0.00 | 0.25 | 0.25 |
+| attitude_noise_burst | 0.00 | 0.00 | 0.00 | 0.00 | 0.07 | 0.07 |
 | control_lag | 1.00 | 1.00 | 1.00 | 0.00 | 1.00 | 1.00 |
-| engine_power_loss | 0.43 | 1.00 | 1.00 | 0.00 | 0.57 | 1.00 |
+| engine_power_loss | 0.26 | 1.00 | 1.00 | 0.00 | 0.26 | 1.00 |
 | sensor_dropout | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 1.00 |
-| stuck_airspeed | 0.00 | 0.14 | 0.43 | 1.00 | 0.00 | 1.00 |
+| stuck_airspeed | 0.00 | 0.25 | 0.25 | 1.00 | 0.00 | 1.00 |
 
 ![confusion](results/confusion.png)
 
@@ -132,8 +134,8 @@ _Triage section skipped: triage cache miss in offline mode: eb12cfbd95409733b4fa
   above shows this for `attitude_noise_burst`.
 - **A fault the autopilot hides.** The autopilot flies on truth, so a sensor
   fault never changes the flight. An aircraft fault that the autopilot
-  compensates for well (mild control lag in cruise) leaves little trace in the
-  sensors.
+  compensates for well (mild control lag in cruise) leaves little trace in
+  the sensors.
 - **Anything before the first alarm.** The triage agent only receives windows
   that a detector flagged, so its accuracy is conditional on detection.
 
@@ -160,9 +162,12 @@ _Triage section skipped: triage cache miss in offline mode: eb12cfbd95409733b4fa
   engine, because JSBSim's piston engine exposes no partial-power property.
 - **Residual coefficients are fitted.** The airspeed and energy checks have
   physics structure but learned drag and propeller terms.
-- **Small evaluation.** False-alarm rates come from 1.1 held-out flight hours;
-  a rate of 0 or 1 per hour is a coarse estimate. Triage accuracy is on about
-  a hundred windows from one campaign seed.
+- **Small evaluation.** False-alarm rates come from a few fault-free flight
+  hours (the held-out nominal runs plus pre-onset segments; the pooled
+  estimate in the evaluation section is the honest number, roughly the
+  one-per-hour target rate). Rates estimated from hours this few carry wide
+  error bars. Triage accuracy is on about a hundred windows from one
+  campaign seed.
 - **The triage prompt contains reasoning hints** written from the fault
   definitions, so the agent is scored on faults it was told about.
 

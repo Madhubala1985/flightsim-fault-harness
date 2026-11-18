@@ -62,3 +62,12 @@
   results only, "What the detectors cannot see", Limitations, "How to add a fault type".
 - MIT LICENSE, CITATION.cff, CI badge. Per-run flight table moved out of the README to
   `results/runs.md`.
+
+## 0.5.1 - Review fixes (2026-11-18)
+- Bigger campaign (150 runs) and a pooled false-alarm estimate: held-out
+  nominal hours plus pre-onset hours on faulted runs, with a per-fault
+  "pre_onset_per_hour" column. The generated sentence replaces the
+  misleading "0.00 per hour on 1.1 hours" reading (~1.1/hour pooled, the
+  target rate).
+- README: why the autopilot flies on truth (isolates sensor from aircraft
+  faults for scoring; closing the loop is the next step).

@@ -1,40 +1,53 @@
 {
   "coeffs": {
     "airspeed": [
-      -4.956729004469274,
-      -0.11426576391122287,
-      0.002047883734644401,
-      -0.0399110928444751
+      -4.684372032974681,
+      -0.1571224797976698,
+      0.0019562735737245762,
+      -0.022806487153717993
     ],
     "energy": [
-      -1230.5682742054012,
-      0.8273899515003578,
-      -4.80776488873625
+      -1276.5059343386215,
+      0.8273772190280543,
+      -4.463078754041866
     ]
   },
   "scales": {
-    "airspeed": 0.1275609977731049,
-    "energy": 23.512049212933416,
-    "alt_rate": 0.5117297102747352
+    "airspeed": 0.12580349127350712,
+    "energy": 24.21007276173306,
+    "alt_rate": 0.5080814743492338
   },
   "thresholds": {
     "staleness": 1.0,
-    "alt_rate": 7.748023767184357,
-    "airspeed": 5.262932220956116,
-    "energy": 4.413005905546836,
-    "iforest": 0.21464385108260864
+    "alt_rate": 7.932444567900563,
+    "airspeed": 5.043193215038402,
+    "energy": 4.81422119599379,
+    "iforest": 0.2278963516390462
   },
   "persistence": 5,
   "staleness_s": 3.0,
   "target_fa_per_hour": 1.0,
   "train_runs": [
-    "campaign7-run018",
-    "campaign7-run019",
-    "campaign7-run028",
-    "campaign7-run029",
-    "campaign7-run031",
-    "campaign7-run045",
-    "campaign7-run046"
+    "campaign7-run049",
+    "campaign7-run051",
+    "campaign7-run053",
+    "campaign7-run054",
+    "campaign7-run055",
+    "campaign7-run060",
+    "campaign7-run061",
+    "campaign7-run062",
+    "campaign7-run066",
+    "campaign7-run068",
+    "campaign7-run071",
+    "campaign7-run079",
+    "campaign7-run084",
+    "campaign7-run087",
+    "campaign7-run090",
+    "campaign7-run091",
+    "campaign7-run092",
+    "campaign7-run094",
+    "campaign7-run099",
+    "campaign7-run102"
   ],
   "val_runs": [
     "campaign7-run002",
@@ -42,6 +55,14 @@
     "campaign7-run006",
     "campaign7-run009",
     "campaign7-run012",
-    "campaign7-run016"
+    "campaign7-run016",
+    "campaign7-run018",
+    "campaign7-run019",
+    "campaign7-run028",
+    "campaign7-run029",
+    "campaign7-run031",
+    "campaign7-run045",
+    "campaign7-run046",
+    "campaign7-run047"
   ]
 }

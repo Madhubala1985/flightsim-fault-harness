@@ -15,7 +15,7 @@ fly:
 	$(PY) -m fsfh fly --scenario basic --seed 1 --out runs/
 
 campaign:
-	$(PY) -m fsfh campaign --n 60 --seed 7 --out runs/
+	$(PY) -m fsfh campaign --n 150 --seed 7 --out runs/
 
 fit:
 	$(PY) -m fsfh fit --manifest runs/campaign7-manifest.csv --models models/

@@ -43,6 +43,9 @@ def score_run(row: dict, model_dir: Path, exclude: set[str]) -> dict:
         "held_out": row["fault_type"] == "nominal" and row["run_id"] not in exclude,
         "hours": hours,
     }
+    out["pre_onset_hours"] = (
+        0.0 if row["fault_type"] == "nominal" else float(row["onset_s"]) / 3600.0
+    )
     for name in ALL:
         ev = alarm_events(alarms[name].to_numpy(), t)
         if row["fault_type"] == "nominal":
@@ -70,6 +73,7 @@ def per_fault_table(df: pd.DataFrame) -> pd.DataFrame:
     rows = []
     for ftype, g in faulted.groupby("fault_type"):
         det = g["any_ttd"].notna()
+        pre_hours = g["pre_onset_hours"].sum()
         rows.append(
             {
                 "fault_type": ftype,
@@ -77,6 +81,7 @@ def per_fault_table(df: pd.DataFrame) -> pd.DataFrame:
                 "detection_rate": det.mean(),
                 "median_ttd_s": g.loc[det, "any_ttd"].median() if det.any() else np.nan,
                 "pre_onset_false_alarms": int(g["any_events"].sum()),
+                "pre_onset_per_hour": g["any_events"].sum() / pre_hours if pre_hours else np.nan,
             }
         )
     return pd.DataFrame(rows)
@@ -91,6 +96,28 @@ def false_alarm_table(df: pd.DataFrame) -> pd.DataFrame:
         for name in ALL
     ]  # fmt: skip
     return pd.DataFrame(rows), hours, len(held)
+
+
+def pooled_false_alarm_sentence(df: pd.DataFrame, fa: pd.DataFrame, held_hours: float) -> str:
+    """One honest, generated sentence pooling every alarm-free segment we have.
+
+    Held-out nominal hours and the pre-onset segments of faulted runs (models
+    never see faulted runs, so pre-onset time is clean) are both fault-free;
+    pooling them gives the widest base for the rate estimate, so a lucky zero
+    on a small held-out set cannot overstate performance.
+    """
+    faulted = df[df.fault_type != "nominal"]
+    pre_events = int(faulted["any_events"].sum())
+    pre_hours = float(faulted["pre_onset_hours"].sum())
+    held_events = int(fa.loc[fa.detector == "any", "events"].sum())
+    events = pre_events + held_events
+    total_hours = held_hours + pre_hours
+    rate = events / total_hours if total_hours else float("nan")
+    return (
+        f"\nPooled estimate ('any' detector) over all fault-free time — {held_hours:.2f} "
+        f"held-out nominal hours plus {pre_hours:.2f} pre-onset hours on faulted runs: "
+        f"{events} alarm events in {total_hours:.2f} hours, about {rate:.1f} per hour.\n"
+    )
 
 
 def confusion_table(df: pd.DataFrame) -> pd.DataFrame:
@@ -126,6 +153,7 @@ def write_reports(df: pd.DataFrame, out_dir: Path) -> dict[str, str]:
         f"### False alarms on held-out nominal runs ({n_held} runs, {hours:.2f} flight hours)\n\n"
         + md_table(fa)
         + "\nHeld-out = nominal runs used neither for training nor for threshold validation.\n"
+        + pooled_false_alarm_sentence(df, fa, hours)
     )
     confusion = (
         "### Which detector fires for which fault (fraction of runs detected)\n\n" + md_table(conf)
