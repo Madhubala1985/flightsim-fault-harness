@@ -1,0 +1,17 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 107.8 s to 152.8 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=123.7 s, active 35% of window, peak score 50.88 nominal-sigma\n  - airspeed: first at t=123.2 s, active 43% of window, peak score 62.54 nominal-sigma\n  - energy: first at t=122.8 s, active 56% of window, peak score 46.05 nominal-sigma\n  - iforest: first at t=123.3 s, active 21% of window, peak score 0.28 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 88.16, std 9.161, range [77.0, 103.5], slope -0.6126/s, 154 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 5886.9, std 102.554, range [5709.0, 6041.0], slope 7.5164/s, 227 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 416.96, std 650.018, range [-920.0, 2630.0], slope -5.3509/s, 186 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - pitch_deg: mean 4.49, std 11.427, range [-29.79, 44.07], slope 0.0513/s, 379 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.07, std 6.058, range [-19.19, 20.9], slope 0.0018/s, 396 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 1.02, std 2.527, range [-4.8, 13.9], slope -0.025/s, 180 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2758.09, std 44.08, range [2630.0, 2820.0], slope 2.4076/s, 19 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "engine_power_loss",
+    "confidence": 0.8,
+    "evidence": [
+      "energy: first at t=122.8 s, active 56% of window, peak score 46.05 nominal-sigma",
+      "airspeed: first at t=123.2 s, active 43% of window, peak score 62.54 nominal-sigma",
+      "rpm: mean 2758.09, std 44.08, range [2630.0, 2820.0]",
+      "energy: mean 2758.09, std 44.08, range [2630.0, 2820.0]",
+      "airspeed: mean 88.16, std 9.161, range [77.0, 103.5]"
+    ],
+    "recommended_check": "Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation."
+  }
+}

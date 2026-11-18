@@ -1,0 +1,16 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 446.8 s to 491.8 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=461.8 s, active 41% of window, peak score 40.86 nominal-sigma\n  - airspeed: first at t=462.9 s, active 42% of window, peak score 53.21 nominal-sigma\n  - energy: first at t=462.5 s, active 46% of window, peak score 47.27 nominal-sigma\n  - iforest: first at t=462.3 s, active 20% of window, peak score 0.27 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 94.12, std 6.52, range [85.3, 106.2], slope -0.4017/s, 132 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - altitude_ft: mean 5852.32, std 39.99, range [5779.0, 5957.0], slope -1.8368/s, 146 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -160.62, std 582.469, range [-1640.0, 1120.0], slope 17.2372/s, 182 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - pitch_deg: mean 0.3, std 10.766, range [-30.67, 35.05], slope 0.1368/s, 371 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean 0.44, std 5.005, range [-15.76, 17.31], slope -0.0039/s, 372 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 360.51, std 1.97, range [356.3, 369.9], slope -0.0109/s, 167 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - rpm: mean 2550.16, std 318.742, range [2030.0, 2820.0], slope 20.7559/s, 48 distinct values, longest constant stretch 0.9 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "alt_rate: peak score 40.86 nominal-sigma",
+      "energy: peak score 47.27 nominal-sigma",
+      "airspeed: peak score 53.21 nominal-sigma",
+      "iforest: peak score 0.27 nominal-sigma"
+    ],
+    "recommended_check": "Check the altimeter's bias and drift, and verify the airspeed sensor's functionality"
+  }
+}

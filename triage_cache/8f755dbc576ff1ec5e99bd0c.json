@@ -1,0 +1,16 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 123.3 s to 168.3 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=141.5 s, active 5% of window, peak score 19.09 nominal-sigma\n  - airspeed: first at t=138.5 s, active 57% of window, peak score 37.24 nominal-sigma\n  - energy: first at t=138.3 s, active 40% of window, peak score 36.62 nominal-sigma\n  - iforest: first at t=141.3 s, active 6% of window, peak score 0.24 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 90.92, std 7.707, range [77.7, 100.9], slope -0.2887/s, 184 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 5962.26, std 70.275, range [5823.0, 6043.0], slope 5.0579/s, 159 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 290.42, std 276.7, range [-380.0, 1040.0], slope -12.2198/s, 104 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - pitch_deg: mean 2.92, std 7.295, range [-20.16, 24.68], slope -0.0499/s, 323 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean 0.7, std 2.729, range [-6.21, 11.15], slope 0.0032/s, 352 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 358.95, std 1.51, range [355.6, 363.6], slope -0.0747/s, 159 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2767.49, std 39.852, range [2690.0, 2830.0], slope 2.675/s, 15 distinct values, longest constant stretch 1.4 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "engine_power_loss",
+    "confidence": 0.8,
+    "evidence": [
+      "airspeed: peak score 37.24 nominal-sigma",
+      "energy: peak score 36.62 nominal-sigma",
+      "rpm: mean 2767.49, std 39.852, range [2690.0, 2830.0]",
+      "energy: first at t=138.3 s, active 40% of window"
+    ],
+    "recommended_check": "Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation."
+  }
+}

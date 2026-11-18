@@ -1,0 +1,19 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 250.0 s to 295.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 99.37, std 0.525, range [97.7, 100.9], slope 0.0003/s, 31 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6020.5, std 3.578, range [6012.0, 6031.0], slope -0.1003/s, 19 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 8.96, std 36.472, range [-80.0, 110.0], slope -0.3756/s, 19 distinct values, longest constant stretch 0.5 s, NaN fraction 0.0\n  - pitch_deg: mean 1.03, std 0.22, range [0.52, 1.6], slope 0.0003/s, 90 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - roll_deg: mean 0.1, std 0.885, range [-1.45, 1.64], slope 0.0135/s, 229 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 89.67, std 0.463, range [88.6, 91.0], slope -0.0029/s, 23 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2478.84, std 17.626, range [2440.0, 2510.0], slope -0.4147/s, 8 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: airspeed_kts has 31 distinct values, longest constant stretch 0.3 s",
+      "staleness: altitude_ft has 19 distinct values, longest constant stretch 0.3 s",
+      "staleness: vertical_speed_fpm has 19 distinct values, longest constant stretch 0.5 s",
+      "staleness: pitch_deg has 90 distinct values, longest constant stretch 0.3 s",
+      "staleness: roll_deg has 229 distinct values, longest constant stretch 0.2 s",
+      "staleness: heading_deg has 23 distinct values, longest constant stretch 0.3 s",
+      "staleness: rpm has 8 distinct values, longest constant stretch 1.0 s"
+    ],
+    "recommended_check": "Check for stuck or faulty airspeed sensor by verifying the longest constant stretch and NaN fraction for airspeed_kts."
+  }
+}

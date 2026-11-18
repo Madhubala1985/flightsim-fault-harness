@@ -1,0 +1,16 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 320.3 s to 365.3 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=336.1 s, active 48% of window, peak score 80.71 nominal-sigma\n  - airspeed: first at t=335.6 s, active 50% of window, peak score 84.15 nominal-sigma\n  - energy: first at t=335.3 s, active 51% of window, peak score 60.98 nominal-sigma\n  - iforest: first at t=335.3 s, active 51% of window, peak score 0.29 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 87.58, std 10.188, range [71.6, 104.1], slope -0.5966/s, 180 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - altitude_ft: mean 6094.58, std 75.423, range [5974.0, 6221.0], slope 4.3821/s, 179 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 207.25, std 1022.139, range [-2340.0, 3360.0], slope 2.3071/s, 227 distinct values, longest constant stretch 0.5 s, NaN fraction 0.0\n  - pitch_deg: mean 3.22, std 14.356, range [-43.17, 53.36], slope 0.0152/s, 398 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -11.07, std 10.772, range [-38.12, 9.16], slope 0.5885/s, 411 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 28.62, std 29.39, range [-0.5, 90.9], slope -2.1186/s, 295 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2672.73, std 140.865, range [2400.0, 2820.0], slope 9.0437/s, 37 distinct values, longest constant stretch 0.9 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "engine_power_loss",
+    "confidence": 0.8,
+    "evidence": [
+      "energy: first at t=335.3 s, active 51% of window, peak score 60.98 nominal-sigma",
+      "airspeed: first at t=335.6 s, active 50% of window, peak score 84.15 nominal-sigma",
+      "rpm: mean 2672.73, std 140.865, range [2400.0, 2820.0]",
+      "rpm: slope 9.0437/s"
+    ],
+    "recommended_check": "Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation."
+  }
+}

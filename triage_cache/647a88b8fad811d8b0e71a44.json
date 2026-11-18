@@ -1,0 +1,19 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 400.0 s to 445.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 100.06, std 0.775, range [98.3, 103.7], slope 0.0199/s, 46 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6007.28, std 8.014, range [5968.0, 6021.0], slope -0.2221/s, 41 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -31.44, std 113.912, range [-480.0, 90.0], slope -3.7882/s, 43 distinct values, longest constant stretch 0.5 s, NaN fraction 0.0\n  - pitch_deg: mean 0.6, std 0.928, range [-3.22, 1.41], slope -0.0355/s, 137 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.23, std 0.911, range [-1.89, 1.39], slope -0.0078/s, 238 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 1.12, std 0.47, range [-0.2, 2.3], slope 0.0023/s, 68 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2454.91, std 38.327, range [2270.0, 2500.0], slope -0.7952/s, 22 distinct values, longest constant stretch 1.1 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: airspeed_kts has 46 distinct values, longest constant stretch 0.3 s",
+      "staleness: altitude_ft has 41 distinct values, longest constant stretch 0.3 s",
+      "staleness: vertical_speed_fpm has 43 distinct values, longest constant stretch 0.5 s",
+      "staleness: pitch_deg has 137 distinct values, longest constant stretch 0.2 s",
+      "staleness: roll_deg has 238 distinct values, longest constant stretch 0.2 s",
+      "staleness: heading_deg has 68 distinct values, longest constant stretch 0.3 s",
+      "staleness: rpm has 22 distinct values, longest constant stretch 1.1 s"
+    ],
+    "recommended_check": "Check for sensor dropout or pitot block by inspecting airspeed_kts and altitude_ft channels for NaN values and constant values over time."
+  }
+}

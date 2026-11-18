@@ -1,0 +1,13 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 251.7 s to 296.7 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=251.7 s, active 45% of window, peak score 301.78 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 98.94, std 0.556, range [97.3, 100.4], slope 0.0015/s, 29 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6273.75, std 228.311, range [5999.0, 6529.12], slope -14.0753/s, 280 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 8.76, std 36.798, range [-80.0, 90.0], slope 0.0496/s, 18 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 1.14, std 0.233, range [0.61, 1.66], slope 0.0037/s, 97 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.05, std 0.882, range [-1.66, 1.53], slope 0.0177/s, 231 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 90.0, std 0.483, range [88.9, 91.2], slope 0.0006/s, 24 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2459.42, std 18.337, range [2420.0, 2500.0], slope -0.2607/s, 9 distinct values, longest constant stretch 1.2 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "alt_rate: first at t=251.7 s, active 45% of window, peak score 301.78 nominal-sigma"
+    ],
+    "recommended_check": "Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+  }
+}

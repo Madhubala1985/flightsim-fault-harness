@@ -1,0 +1,19 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 400.0 s to 445.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 100.11, std 0.763, range [98.5, 103.3], slope 0.0206/s, 40 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 5999.61, std 8.069, range [5955.0, 6011.0], slope -0.2125/s, 42 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -36.24, std 115.296, range [-490.0, 90.0], slope -3.8172/s, 44 distinct values, longest constant stretch 0.6 s, NaN fraction 0.0\n  - pitch_deg: mean 0.63, std 0.924, range [-3.25, 1.47], slope -0.0351/s, 137 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - roll_deg: mean -0.23, std 0.909, range [-1.84, 1.38], slope -0.0077/s, 226 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - heading_deg: mean 359.66, std 0.485, range [358.4, 361.0], slope 0.0037/s, 69 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2453.22, std 38.564, range [2270.0, 2500.0], slope -0.7223/s, 23 distinct values, longest constant stretch 1.4 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: airspeed_kts has 40 distinct values, longest constant stretch 0.3 s",
+      "staleness: altitude_ft has 42 distinct values, longest constant stretch 0.4 s",
+      "staleness: vertical_speed_fpm has 44 distinct values, longest constant stretch 0.6 s",
+      "staleness: pitch_deg has 137 distinct values, longest constant stretch 0.3 s",
+      "staleness: roll_deg has 226 distinct values, longest constant stretch 0.3 s",
+      "staleness: heading_deg has 69 distinct values, longest constant stretch 0.3 s",
+      "staleness: rpm has 23 distinct values, longest constant stretch 1.4 s"
+    ],
+    "recommended_check": "Verify sensor data integrity and check for any signs of data corruption or loss."
+  }
+}

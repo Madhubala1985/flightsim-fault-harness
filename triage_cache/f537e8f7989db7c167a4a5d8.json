@@ -1,0 +1,19 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 250.0 s to 295.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 101.86, std 0.549, range [100.3, 103.7], slope 0.0008/s, 28 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - altitude_ft: mean 5988.71, std 3.895, range [5980.0, 6002.0], slope -0.0972/s, 20 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 6.62, std 36.578, range [-90.0, 90.0], slope -0.3997/s, 19 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - pitch_deg: mean 0.77, std 0.228, range [0.2, 1.26], slope 0.0009/s, 95 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean 0.07, std 0.886, range [-1.54, 1.55], slope 0.0132/s, 231 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 90.42, std 0.479, range [89.2, 91.6], slope -0.0038/s, 24 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2465.6, std 18.116, range [2430.0, 2500.0], slope -0.3857/s, 8 distinct values, longest constant stretch 1.7 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: airspeed_kts has 28 distinct values, longest constant stretch 0.2 s",
+      "staleness: altitude_ft has 20 distinct values, longest constant stretch 0.3 s",
+      "staleness: vertical_speed_fpm has 19 distinct values, longest constant stretch 0.3 s",
+      "staleness: pitch_deg has 95 distinct values, longest constant stretch 0.2 s",
+      "staleness: roll_deg has 231 distinct values, longest constant stretch 0.2 s",
+      "staleness: heading_deg has 24 distinct values, longest constant stretch 0.3 s",
+      "staleness: rpm has 8 distinct values, longest constant stretch 1.7 s"
+    ],
+    "recommended_check": "Check for sensor dropout or pitot block by inspecting airspeed_kts and altitude_ft channels for NaN values and longest constant stretches."
+  }
+}

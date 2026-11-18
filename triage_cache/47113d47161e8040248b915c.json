@@ -1,0 +1,14 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 83.8 s to 128.8 s (10 Hz sensor data).\n\nAlarms:\n  - staleness: first at t=98.8 s, active 67% of window, peak score 11.1 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 98.28, std 0.53, range [96.6, 99.5], slope -0.0716/s, 25 distinct values, longest constant stretch 33.2 s, NaN fraction 0.739\n  - altitude_ft: mean 5595.98, std 24.126, range [5553.0, 5642.0], slope 7.0775/s, 63 distinct values, longest constant stretch 33.2 s, NaN fraction 0.739\n  - vertical_speed_fpm: mean 404.53, std 32.437, range [340.0, 490.0], slope 7.5717/s, 16 distinct values, longest constant stretch 33.2 s, NaN fraction 0.739\n  - pitch_deg: mean 3.09, std 0.178, range [2.61, 3.5], slope 0.0417/s, 57 distinct values, longest constant stretch 33.2 s, NaN fraction 0.739\n  - roll_deg: mean -0.38, std 0.7, range [-1.55, 0.85], slope 0.0056/s, 100 distinct values, longest constant stretch 33.2 s, NaN fraction 0.739\n  - heading_deg: mean 0.72, std 0.5, range [-0.3, 1.7], slope -0.1084/s, 33 distinct values, longest constant stretch 33.2 s, NaN fraction 0.739\n  - rpm: mean 2709.83, std 17.974, range [2680.0, 2750.0], slope 4.9064/s, 8 distinct values, longest constant stretch 33.2 s, NaN fraction 0.739",
+  "response": {
+    "fault_type": "sensor_dropout",
+    "confidence": 1.0,
+    "evidence": [
+      "staleness: first at t=98.8 s, active 67% of window, peak score 11.1 nominal-sigma",
+      "airspeed_kts: NaN fraction 0.739"
+    ],
+    "recommended_check": "Check for pitot block or sensor dropout by inspecting the airspeed channel and verifying that all other channels are functioning correctly."
+  }
+}

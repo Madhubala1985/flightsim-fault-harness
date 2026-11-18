@@ -1,0 +1,13 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 400.0 s to 445.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 99.98, std 0.808, range [98.3, 103.1], slope 0.0183/s, 44 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - altitude_ft: mean 6000.28, std 7.807, range [5963.0, 6014.0], slope -0.1828/s, 43 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -39.56, std 114.751, range [-500.0, 90.0], slope -3.993/s, 43 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean -0.05, std 0.925, range [-3.98, 0.79], slope -0.0362/s, 131 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean 0.15, std 0.916, range [-1.42, 1.85], slope -0.0076/s, 231 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 0.36, std 0.475, range [-0.9, 1.6], slope 0.0029/s, 129 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2468.8, std 38.423, range [2290.0, 2510.0], slope -0.7117/s, 23 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: longest constant stretch 0.2 s, longest constant stretch 0.4 s"
+    ],
+    "recommended_check": "Check for stuck or faulty airspeed sensor, and verify pitot block functionality."
+  }
+}

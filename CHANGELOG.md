@@ -71,3 +71,12 @@
   target rate).
 - README: why the autopilot flies on truth (isolates sensor from aircraft
   faults for scoring; closing the loop is the next step).
+
+## 0.5.2 - Triage via local model (2026-11-18)
+- Triage table filled: 261 windows scored against ground truth with a free
+  local model (ollama, llama3.2:3b), cache committed so `make results`
+  reproduces the table offline.
+- OllamaBackend uses constrained decoding (json_schema response format);
+  free-form JSON mode let small models echo the schema instead of filling it.
+- Makefile: TRIAGE_BACKEND / TRIAGE_MODEL variables (default ollama /
+  llama3.2:3b); pass TRIAGE_BACKEND=anthropic for the Claude backend.

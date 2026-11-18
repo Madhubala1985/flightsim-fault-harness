@@ -1,0 +1,15 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 497.0 s to 542.0 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=497.0 s, active 53% of window, peak score 19.83 nominal-sigma\n  - airspeed: first at t=497.0 s, active 59% of window, peak score 19.18 nominal-sigma\n  - energy: first at t=497.4 s, active 69% of window, peak score 25.71 nominal-sigma\n  - iforest: first at t=523.3 s, active 1% of window, peak score 0.23 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 88.15, std 2.056, range [84.1, 92.8], slope -0.0396/s, 78 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 5911.3, std 34.943, range [5840.0, 5989.0], slope 2.3921/s, 139 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 166.7, std 419.78, range [-650.0, 740.0], slope 1.5113/s, 128 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - pitch_deg: mean 2.12, std 9.371, range [-15.92, 25.23], slope 0.0309/s, 419 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean 0.16, std 3.79, range [-5.22, 8.49], slope 0.0046/s, 357 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 0.15, std 1.025, range [-2.3, 3.7], slope 0.0061/s, 192 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2800.53, std 6.295, range [2780.0, 2820.0], slope -0.0483/s, 5 distinct values, longest constant stretch 0.9 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "alt_rate: first at t=497.0 s, active 53% of window, peak score 19.83 nominal-sigma",
+      "energy: first at t=497.4 s, active 69% of window, peak score 25.71 nominal-sigma",
+      "iforest: first at t=523.3 s, active 1% of window, peak score 0.23 nominal-sigma"
+    ],
+    "recommended_check": "Verify altimeter functionality and check for any signs of mechanical stress or damage"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 400.0 s to 445.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 101.48, std 0.807, range [99.9, 104.7], slope 0.0225/s, 44 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - altitude_ft: mean 6006.03, std 7.914, range [5966.0, 6017.0], slope -0.2105/s, 43 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -31.91, std 115.138, range [-470.0, 90.0], slope -3.7844/s, 41 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 0.57, std 0.923, range [-3.23, 1.4], slope -0.0361/s, 130 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - roll_deg: mean 0.09, std 0.916, range [-1.6, 1.8], slope -0.0079/s, 234 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 359.05, std 0.497, range [357.6, 360.7], slope 0.0034/s, 36 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - rpm: mean 2465.02, std 38.147, range [2270.0, 2510.0], slope -0.7246/s, 22 distinct values, longest constant stretch 1.2 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: airspeed_kts has 44 distinct values, longest constant stretch 0.2 s",
+      "staleness: altitude_ft has 43 distinct values, longest constant stretch 0.3 s",
+      "staleness: vertical_speed_fpm has 41 distinct values, longest constant stretch 0.4 s",
+      "staleness: pitch_deg has 130 distinct values, longest constant stretch 0.3 s",
+      "staleness: roll_deg has 234 distinct values, longest constant stretch 0.2 s",
+      "staleness: heading_deg has 36 distinct values, longest constant stretch 0.4 s",
+      "staleness: rpm has 22 distinct values, longest constant stretch 1.2 s"
+    ],
+    "recommended_check": "Verify sensor data integrity and check for any signs of data corruption or loss."
+  }
+}

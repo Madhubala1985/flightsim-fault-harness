@@ -1,0 +1,15 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 309.5 s to 354.5 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=325.3 s, active 45% of window, peak score 66.63 nominal-sigma\n  - airspeed: first at t=324.9 s, active 45% of window, peak score 71.25 nominal-sigma\n  - energy: first at t=324.5 s, active 53% of window, peak score 49.97 nominal-sigma\n  - iforest: first at t=325.3 s, active 49% of window, peak score 0.27 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 88.37, std 8.517, range [73.4, 101.9], slope -0.435/s, 183 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - altitude_ft: mean 6105.79, std 68.676, range [5999.0, 6211.0], slope 3.5592/s, 135 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 167.92, std 866.293, range [-2060.0, 3110.0], slope -7.5312/s, 195 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - pitch_deg: mean 2.78, std 12.683, range [-30.94, 47.02], slope -0.0451/s, 382 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -10.57, std 10.393, range [-32.55, 5.41], slope -0.063/s, 397 distinct values, longest constant stretch 0.1 s, NaN fraction 0.0\n  - heading_deg: mean 49.04, std 34.671, range [-0.2, 90.8], slope -2.6009/s, 254 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2673.22, std 155.857, range [2410.0, 2810.0], slope 10.4517/s, 37 distinct values, longest constant stretch 0.8 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "alt_rate: first at t=325.3 s, active 45% of window, peak score 66.63 nominal-sigma",
+      "energy: first at t=324.5 s, active 53% of window, peak score 49.97 nominal-sigma",
+      "iforest: first at t=325.3 s, active 49% of window, peak score 0.27 nominal-sigma"
+    ],
+    "recommended_check": "Check the altimeter's bias and drift values, and verify the sensor data for any signs of dropout or staleness."
+  }
+}

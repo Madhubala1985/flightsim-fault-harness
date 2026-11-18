@@ -1,4 +1,6 @@
 PY ?= .venv/bin/python
+TRIAGE_BACKEND ?= ollama
+TRIAGE_MODEL ?= llama3.2:3b
 
 .PHONY: install lint test fly campaign fit triage results clean
 
@@ -21,11 +23,13 @@ fit:
 	$(PY) -m fsfh fit --manifest runs/campaign7-manifest.csv --models models/
 
 triage:
-	$(PY) -m fsfh triage --manifest runs/campaign7-manifest.csv --models models/ --cache triage_cache/
+	$(PY) -m fsfh triage --manifest runs/campaign7-manifest.csv --models models/ \
+		--cache triage_cache/ --backend $(TRIAGE_BACKEND) --model $(TRIAGE_MODEL)
 
 results:
 	$(PY) -m fsfh results --runs runs/ --readme README.md --out results/ \
-		--manifest runs/campaign7-manifest.csv --models models/
+		--manifest runs/campaign7-manifest.csv --models models/ \
+		--triage-backend $(TRIAGE_BACKEND) --triage-model $(TRIAGE_MODEL)
 
 clean:
 	rm -rf runs/raw .pytest_cache .ruff_cache

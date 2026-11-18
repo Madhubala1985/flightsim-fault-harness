@@ -1,0 +1,19 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 400.0 s to 445.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 99.43, std 0.771, range [97.6, 102.4], slope 0.0176/s, 44 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 5988.02, std 7.872, range [5949.0, 6001.0], slope -0.2099/s, 41 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -44.29, std 114.463, range [-480.0, 100.0], slope -3.7419/s, 45 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 0.58, std 0.924, range [-3.28, 1.46], slope -0.036/s, 133 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.11, std 0.911, range [-1.79, 1.54], slope -0.0077/s, 244 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - heading_deg: mean 1.05, std 0.479, range [0.0, 2.6], slope 0.0025/s, 36 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2457.89, std 38.038, range [2270.0, 2500.0], slope -0.7239/s, 23 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: staleness alarm for airspeed_kts with longest constant stretch 0.3 s",
+      "staleness: staleness alarm for altitude_ft with longest constant stretch 0.3 s",
+      "staleness: staleness alarm for vertical_speed_fpm with longest constant stretch 0.4 s",
+      "staleness: staleness alarm for pitch_deg with longest constant stretch 0.2 s",
+      "staleness: staleness alarm for roll_deg with longest constant stretch 0.3 s",
+      "staleness: staleness alarm for heading_deg with longest constant stretch 0.3 s",
+      "staleness: staleness alarm for rpm with longest constant stretch 1.0 s"
+    ],
+    "recommended_check": "Check sensor data for any signs of dropout or pitot block failure, and verify that all channels are functioning correctly."
+  }
+}

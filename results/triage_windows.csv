@@ -1,0 +1,262 @@
+run_id,t0,t1,label,predicted,confidence,correct,recommended_check
+campaign7-run000,420.59999999976816,465.59999999976816,sensor_dropout,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs.
+campaign7-run001,446.79999999974433,491.79999999974433,control_lag,unknown,0.0,False,"Check the altimeter's bias and drift, and verify the airspeed sensor's functionality"
+campaign7-run001,496.9999999996987,541.9999999996987,control_lag,unknown,0.0,False,Verify altimeter functionality and check for any signs of mechanical stress or damage
+campaign7-run001,554.5999999996463,599.5999999996463,nominal,unknown,0.0,False,"Check altimeter bias and drift, and verify airspeed sensor calibration"
+campaign7-run002,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed channel statistics and performing a visual inspection of the pitot block.
+campaign7-run002,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed channel for constant values and NaNs.
+campaign7-run003,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and rpm channels for NaN values and constant stretches.
+campaign7-run003,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed channel for constant values and NaNs.
+campaign7-run004,429.29999999976025,474.29999999976025,attitude_noise_burst,unknown,0.0,False,Verify Isolation Forest results and consider re-running with different parameters or windowing strategy.
+campaign7-run005,166.799999999999,211.799999999999,altimeter_drift,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run006,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run006,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run007,272.29999999990304,317.29999999990304,stuck_airspeed,unknown,0.0,False,Check sensor data for NaN values and verify pitot block functionality.
+campaign7-run007,381.99999999980326,426.99999999980326,stuck_airspeed,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run007,429.59999999976,474.59999999976,nominal,unknown,0.0,False,"Check the airspeed sensor for any signs of malfunction or contamination, and verify the calibration of the airspeed channel."
+campaign7-run008,429.19999999976034,474.19999999976034,nominal,unknown,0.0,False,"Check altimeter bias and drift, and verify airspeed sensor calibration"
+campaign7-run009,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed channel for unusual patterns or values.
+campaign7-run009,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed channel for constant values and NaNs.
+campaign7-run010,429.19999999976034,474.19999999976034,attitude_noise_burst,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run011,452.0999999997395,497.0999999997395,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run011,534.2999999996648,579.2999999996648,altimeter_bias,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run012,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts channel for unusual patterns or NaN values.
+campaign7-run012,400.0,445.0,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run014,203.59999999996552,248.59999999996552,stuck_airspeed,unknown,0.0,False,Check sensor data for NaNs and verify pitot block functionality
+campaign7-run015,333.5999999998473,378.5999999998473,altimeter_drift,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run015,394.09999999979226,439.09999999979226,altimeter_drift,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run016,250.0,295.0,nominal,unknown,0.0,False,Check for stuck or faulty airspeed sensor by verifying the longest constant stretch and NaN fraction for airspeed_kts.
+campaign7-run016,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and other airspeed-related channels.
+campaign7-run017,242.29999999993032,287.2999999999303,altimeter_drift,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run017,429.59999999976,474.59999999976,nominal,unknown,0.0,False,"Check airspeed sensor for dropout or pitot block failure, and verify airspeed trend against pitch, RPM, and vertical speed predictions."
+campaign7-run018,250.0,295.0,nominal,unknown,0.0,False,Check airspeed sensor for any signs of dropout or pitot block failure.
+campaign7-run018,400.0,445.0,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run019,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run019,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run020,111.60000000004682,156.6000000000468,stuck_airspeed,unknown,0.0,False,"Check the pitot block for blockage or contamination, and verify the sensor dropout rate is within nominal limits."
+campaign7-run021,123.00000000003882,168.00000000003882,control_lag,engine_power_loss,0.8,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run021,178.59999999998826,223.59999999998826,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run022,472.7999999997207,517.7999999997207,stuck_airspeed,unknown,0.0,False,Check sensor data for NaN values and verify pitot block functionality.
+campaign7-run022,553.3999999996474,598.3999999996474,stuck_airspeed,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM trend over the window.
+campaign7-run023,176.09999999999053,221.09999999999053,control_lag,engine_power_loss,0.8,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run023,225.89999999994524,270.89999999994524,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM trend over the window.
+campaign7-run024,204.99999999996425,249.99999999996425,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run024,314.59999999986456,359.59999999986456,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM trend over the window.
+campaign7-run024,429.19999999976034,474.19999999976034,nominal,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run025,107.70000000004372,152.7000000000437,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run025,377.19999999980763,422.19999999980763,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM trend over the window.
+campaign7-run026,467.3999999997256,512.3999999997257,stuck_airspeed,sensor_dropout,1.0,False,Check for sensor dropout by verifying the integrity of the sensor data and ensuring that all channels are functioning correctly.
+campaign7-run027,309.2999999998694,354.2999999998694,control_lag,engine_power_loss,0.8,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run027,409.49999999977825,454.49999999977825,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run028,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and rpm channels for NaN values and constant stretches.
+campaign7-run028,400.0,445.0,nominal,unknown,0.0,False,"Check for stuck or faulty airspeed sensor, and verify pitot block functionality."
+campaign7-run029,250.0,295.0,nominal,unknown,0.0,False,Check for stuck airspeed by verifying that the airspeed_kts channel has not been stuck for an extended period of time.
+campaign7-run029,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run030,114.00000000004701,159.000000000047,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run030,250.19999999992314,295.19999999992314,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run030,428.8999999997606,473.8999999997606,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run031,250.0,295.0,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the longest constant stretch is within expected limits."
+campaign7-run031,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and other airspeed-related channels.
+campaign7-run032,294.49999999988285,339.49999999988285,sensor_dropout,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs.
+campaign7-run032,428.7999999997607,473.7999999997607,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run033,131.5000000000311,176.5000000000311,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run033,182.89999999998435,227.89999999998435,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run034,178.59999999998826,223.59999999998826,sensor_dropout,sensor_dropout,0.0,True,Check for sensor dropout by verifying the integrity of the sensor data and ensuring that all channels are functioning correctly.
+campaign7-run035,309.4999999998692,354.4999999998692,control_lag,unknown,0.0,False,"Check the altimeter's bias and drift values, and verify the sensor data for any signs of dropout or staleness."
+campaign7-run035,422.3999999997665,467.3999999997665,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM trend over the window.
+campaign7-run036,469.8999999997233,514.8999999997234,sensor_dropout,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs.
+campaign7-run037,297.89999999987975,342.89999999987975,stuck_airspeed,sensor_dropout,1.0,False,Check for sensor dropout by inspecting the sensor data for NaN values and verifying that all channels are being read correctly.
+campaign7-run037,412.0999999997759,457.0999999997759,stuck_airspeed,engine_power_loss,0.8,False,"Check engine power loss by inspecting RPM and airspeed trends, and verify that the throttle authority is within expected limits."
+campaign7-run038,393.09999999979317,438.09999999979317,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run039,164.10000000000144,209.10000000000144,altimeter_drift,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run040,107.8000000000438,152.80000000004378,control_lag,engine_power_loss,0.8,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run040,161.20000000000408,206.20000000000408,control_lag,engine_power_loss,0.85,False,Check the engine's throttle authority and RPM to ensure it is within nominal ranges.
+campaign7-run040,221.59999999994915,266.59999999994915,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run040,429.39999999976015,474.39999999976015,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run041,195.39999999997298,240.39999999997298,sensor_dropout,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs.
+campaign7-run042,136.50000000002655,181.50000000002655,sensor_dropout,unknown,0.0,False,"Check the pitot block for blockage or contamination, and verify the sensor dropout rate is within nominal limits."
+campaign7-run043,398.9999999997878,443.9999999997878,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run043,472.6999999997208,517.6999999997208,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM trend over the window.
+campaign7-run044,300.09999999987775,345.09999999987775,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run044,464.49999999972823,509.49999999972823,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM trend over the window.
+campaign7-run045,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and rpm channels for NaN values or unusual trends.
+campaign7-run045,400.0,445.0,nominal,unknown,0.0,False,"Check sensor data for any signs of dropout or pitot block failure, and verify that all channels are functioning correctly."
+campaign7-run046,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed channel and looking for signs of constant or NaN values.
+campaign7-run046,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting the airspeed channel and verifying that all other channels are functioning correctly.
+campaign7-run047,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed and altitude channels for constant values or NaNs.
+campaign7-run047,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed and altitude channels for constant values or NaNs.
+campaign7-run048,328.89999999985156,373.89999999985156,altimeter_bias,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run048,428.6999999997608,473.6999999997608,nominal,unknown,0.0,False,"Check the airspeed sensor for any signs of malfunction or contamination, and verify the calibration of the airspeed channel."
+campaign7-run049,250.0,295.0,nominal,unknown,0.0,False,Verify sensor data integrity and check for any signs of data corruption or loss.
+campaign7-run049,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and altitude_ft channels for NaN values and constant values over time.
+campaign7-run050,314.8999999998643,359.8999999998643,altimeter_drift,unknown,0.0,False,Check the altimeter's performance and verify its calibration.
+campaign7-run050,372.89999999981154,417.89999999981154,altimeter_drift,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run050,428.5999999997609,473.5999999997609,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the airspeed trend is consistent with the predicted trend from pitch, RPM, and vertical speed."
+campaign7-run051,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts channel and verifying that all other channels are functioning correctly.
+campaign7-run051,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and altitude_ft channels for constant values or NaNs over the window.
+campaign7-run052,435.5999999997545,480.5999999997545,altimeter_drift,unknown,0.0,False,"Check altimeter data for bias and drift, and verify airspeed sensor integrity"
+campaign7-run052,485.79999999970886,530.7999999997089,altimeter_drift,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run052,543.3999999996565,588.3999999996565,altimeter_drift,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run053,250.0,295.0,nominal,unknown,0.0,False,"Check for stuck airspeed by verifying that the airspeed_kts channel has a single, constant value over the entire window."
+campaign7-run053,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed and RPM channels for constant values or NaNs over the window.
+campaign7-run054,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run054,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and other airspeed-related channels.
+campaign7-run055,250.0,295.0,nominal,unknown,0.0,False,"Check for stuck airspeed or sensor dropout by inspecting the airspeed_kts channel for a single, constant value or NaNs across the entire window."
+campaign7-run055,400.0,445.0,nominal,unknown,0.0,False,Check for stuck or faulty airspeed sensor by verifying the longest constant stretch and NaN fraction for the airspeed_kts channel.
+campaign7-run056,198.8999999999698,243.8999999999698,sensor_dropout,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs.
+campaign7-run056,427.9999999997614,472.9999999997614,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run057,429.0999999997604,474.0999999997604,nominal,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run058,94.50000000003321,139.5000000000332,sensor_dropout,sensor_dropout,1.0,True,"Check sensor data for any signs of physical damage or malfunction, and verify that all sensors are properly connected and calibrated."
+campaign7-run058,428.8999999997606,473.8999999997606,nominal,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run059,206.09999999996325,251.09999999996325,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run059,398.9999999997878,443.9999999997878,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run060,250.0,295.0,nominal,unknown,0.0,False,"Check for stuck airspeed by verifying that the airspeed_kts channel has a single, constant value over the entire window."
+campaign7-run060,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run061,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run061,400.0,445.0,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run062,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting the longest constant stretches and NaN fractions for each channel.
+campaign7-run062,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and altitude_ft channels for NaN values and constant values over time.
+campaign7-run063,230.49999999994105,275.49999999994105,sensor_dropout,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs.
+campaign7-run064,230.8999999999407,275.8999999999407,sensor_dropout,sensor_dropout,0.0,True,Check for sensor dropout by verifying the integrity of the sensor data and ensuring that all channels are functioning correctly.
+campaign7-run065,429.19999999976034,474.19999999976034,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run066,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and rpm channels for NaN values or unusual trends.
+campaign7-run066,400.0,445.0,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run067,178.59999999998826,223.59999999998826,altimeter_drift,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run067,428.9999999997605,473.9999999997605,nominal,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run068,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed channel for constant values and NaNs.
+campaign7-run068,400.0,445.0,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run069,123.30000000003855,168.30000000003855,control_lag,engine_power_loss,0.8,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run069,172.299999999994,217.299999999994,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run069,428.5999999997609,473.5999999997609,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run070,196.19999999997225,241.19999999997225,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run070,404.89999999978244,449.89999999978244,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run071,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed channel for constant values and NaNs.
+campaign7-run071,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and other airspeed-related channels.
+campaign7-run073,447.3999999997438,492.3999999997438,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run073,548.6999999996517,593.6999999996517,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM trend over the window.
+campaign7-run074,412.0999999997759,457.0999999997759,stuck_airspeed,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run076,394.99999999979144,439.99999999979144,engine_power_loss,engine_power_loss,0.8,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run076,537.7999999996616,582.7999999996616,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run077,239.59999999993278,284.5999999999328,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run077,360.69999999982264,405.69999999982264,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM trend over the window.
+campaign7-run078,395.499999999791,440.499999999791,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run079,250.0,295.0,nominal,unknown,0.0,False,"Check for stuck or faulty airspeed sensor, and verify pitot block functionality."
+campaign7-run079,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run081,489.7999999997052,534.7999999997053,stuck_airspeed,unknown,0.0,False,"Check sensor data for any signs of physical damage or malfunction, and verify that the pitot block is functioning correctly."
+campaign7-run082,123.10000000003873,168.10000000003873,control_lag,unknown,0.0,False,"Check the altimeter's bias and drift values, and verify the engine's power output and RPM values."
+campaign7-run082,224.2999999999467,269.2999999999467,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run083,89.70000000002939,134.70000000002938,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run083,208.39999999996115,253.39999999996115,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run084,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs.
+campaign7-run084,400.0,445.0,nominal,unknown,0.0,False,"Check the airspeed sensor for any signs of malfunction or contamination, and verify the calibration of the airspeed channel."
+campaign7-run085,408.39999999977925,453.39999999977925,sensor_dropout,sensor_dropout,1.0,True,Check for sensor dropout by inspecting the sensor data for NaN values and verifying that all channels are being read correctly.
+campaign7-run086,78.00000000002008,123.00000000002008,altimeter_bias,unknown,0.0,False,Check the altimeter's performance and verify its calibration.
+campaign7-run086,142.7000000000209,187.7000000000209,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run087,250.0,295.0,nominal,unknown,0.0,False,Check for stuck airspeed by verifying that the airspeed_kts channel has not been stuck for an extended period of time.
+campaign7-run087,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs.
+campaign7-run088,72.70000000001586,117.70000000001586,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run088,192.2999999999758,237.2999999999758,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run088,428.6999999997608,473.6999999997608,nominal,unknown,0.0,False,"Check the airspeed sensor for any signs of malfunction or contamination, and verify the calibration of the airspeed channel."
+campaign7-run089,237.5999999999346,282.5999999999346,sensor_dropout,unknown,0.0,False,"Check the pitot block for blockage or contamination, and verify the sensor dropout rate is within expected limits."
+campaign7-run089,429.29999999976025,474.29999999976025,nominal,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run090,250.0,295.0,nominal,unknown,0.0,False,"Check sensor data for any signs of dropout or staleness, and verify that all channels are functioning correctly."
+campaign7-run090,400.0,445.0,nominal,unknown,0.0,False,Check the altimeter and airspeed sensors for any signs of malfunction or contamination.
+campaign7-run091,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run091,400.0,445.0,nominal,unknown,0.0,False,"Check sensor data for airspeed_kts and pitch_deg for any signs of stuck or constant values, and verify the pitot block is functioning correctly."
+campaign7-run092,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and rpm channels for NaN values or unusual trends.
+campaign7-run092,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run093,146.80000000001718,191.80000000001718,control_lag,engine_power_loss,0.8,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run093,221.89999999994888,266.8999999999489,control_lag,engine_power_loss,0.8,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run094,250.0,295.0,nominal,unknown,0.0,False,"Check for stuck airspeed by verifying that the airspeed_kts channel has a single, constant value over the entire window."
+campaign7-run094,400.0,445.0,nominal,unknown,0.0,False,"Check for stuck or faulty sensors, and verify sensor calibration and data integrity."
+campaign7-run095,305.69999999987266,350.69999999987266,sensor_dropout,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs.
+campaign7-run096,114.40000000004665,159.40000000004665,altimeter_drift,unknown,0.0,False,Check the altimeter's performance and verify its calibration.
+campaign7-run097,428.5999999997609,473.5999999997609,nominal,unknown,0.0,False,"Check the airspeed sensor for any signs of malfunction or contamination, and verify the calibration of the airspeed channel."
+campaign7-run097,511.0999999996859,556.0999999996859,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run098,429.6999999997599,474.6999999997599,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of malfunction or contamination, and verify that the pitot block is functioning correctly."
+campaign7-run099,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed channel for NaN values and longest constant stretch.
+campaign7-run099,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run100,428.19999999976125,473.19999999976125,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the airspeed trend is consistent with the predicted trend from pitch, RPM, and vertical speed."
+campaign7-run100,563.1999999996385,608.1999999996385,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run101,429.0999999997604,474.0999999997604,engine_power_loss,unknown,0.0,False,"Check altimeter bias and drift, and verify that the altimeter is not stuck or faulty."
+campaign7-run101,571.9999999996305,616.9999999996305,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run102,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed channel for unusual patterns or values.
+campaign7-run102,400.0,445.0,nominal,unknown,0.0,False,"Check the airspeed sensor for any signs of malfunction or contamination, and verify the calibration of the airspeed channel."
+campaign7-run103,492.29999999970295,537.299999999703,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run103,590.6999999996135,635.6999999996135,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run104,295.2999999998821,340.2999999998821,sensor_dropout,unknown,0.0,False,"Check the pitot block for blockage or contamination, and verify the sensor dropout rate is within expected limits."
+campaign7-run105,428.8999999997606,473.8999999997606,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run106,257.19999999991677,302.19999999991677,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run106,374.8999999998097,419.8999999998097,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run107,369.89999999981427,414.89999999981427,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run108,397.8999999997888,442.8999999997888,stuck_airspeed,unknown,0.0,False,"Check the pitot block for blockage or contamination, and verify the sensor data integrity."
+campaign7-run110,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and altitude_ft channels for NaN values and constant values over time.
+campaign7-run110,400.0,445.0,nominal,unknown,0.0,False,Verify sensor data integrity and check for any signs of data corruption or loss.
+campaign7-run112,83.8000000000247,128.80000000002468,sensor_dropout,sensor_dropout,1.0,True,Check for pitot block or sensor dropout by inspecting the airspeed channel and verifying that all other channels are functioning correctly.
+campaign7-run113,140.400000000023,185.400000000023,altimeter_bias,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run113,203.19999999996588,248.19999999996588,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run113,428.6999999997608,473.6999999997608,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run114,428.9999999997605,473.9999999997605,sensor_dropout,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run115,357.0999999998259,402.0999999998259,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run115,450.19999999974124,495.19999999974124,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM trend over the window.
+campaign7-run116,231.89999999993978,276.8999999999398,altimeter_drift,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run116,278.7999999998971,323.7999999998971,altimeter_drift,unknown,0.0,False,Check altimeter bias and drift for sudden changes or anomalies in the alt_rate alarm.
+campaign7-run116,429.19999999976034,474.19999999976034,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run117,429.29999999976025,474.29999999976025,attitude_noise_burst,unknown,0.0,False,"Check the Isolation Forest algorithm's sensitivity to noise and outliers, and consider re-running the analysis with a different threshold or noise reduction technique."
+campaign7-run118,391.2999999997948,436.2999999997948,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run119,320.2999999998594,365.2999999998594,control_lag,engine_power_loss,0.8,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run119,413.099999999775,458.099999999775,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run120,136.20000000002682,181.20000000002682,sensor_dropout,sensor_dropout,1.0,True,Check for pitot block or sensor dropout by inspecting the airspeed channel and looking for a sudden change in value or a prolonged period of NaNs.
+campaign7-run120,428.6999999997608,473.6999999997608,nominal,unknown,0.0,False,"Check the altimeter's bias and drift values, and verify the pitot block's functionality."
+campaign7-run121,428.7999999997607,473.7999999997607,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run122,474.9999999997187,519.9999999997187,sensor_dropout,sensor_dropout,1.0,True,Check for pitot block or sensor dropout by inspecting the airspeed channel and verifying that all other channels are functioning correctly.
+campaign7-run123,381.89999999980336,426.89999999980336,control_lag,engine_power_loss,0.8,False,Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation.
+campaign7-run123,430.699999999759,475.699999999759,nominal,engine_power_loss,0.85,False,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run124,144.9000000000189,189.9000000000189,altimeter_drift,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run124,194.4999999999738,239.4999999999738,altimeter_drift,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run124,428.8999999997606,473.8999999997606,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run125,418.09999999977043,463.09999999977043,engine_power_loss,engine_power_loss,0.85,True,Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority.
+campaign7-run126,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed channel for constant values and NaNs.
+campaign7-run126,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run127,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed_kts and altitude_ft channels for constant values or NaNs
+campaign7-run127,400.0,445.0,nominal,unknown,0.0,False,Verify sensor data integrity and check for any signs of data corruption or loss.
+campaign7-run128,75.40000000001801,120.40000000001801,sensor_dropout,sensor_dropout,1.0,True,Check for sensor dropout by verifying the integrity of the sensor data and ensuring that all channels are functioning correctly.
+campaign7-run129,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and altitude_ft channels for NaN values and longest constant stretches.
+campaign7-run129,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed and RPM channels for constant values or NaNs over the window.
+campaign7-run130,356.59999999982637,401.59999999982637,sensor_dropout,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values and NaN fractions.
+campaign7-run130,428.29999999976116,473.29999999976116,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run131,250.0,295.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed_kts and altitude_ft channels for NaN values and constant values over time.
+campaign7-run131,400.0,445.0,nominal,unknown,0.0,False,"Check the airspeed sensor for any signs of malfunction or contamination, and verify the calibration of the airspeed channel."
+campaign7-run133,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run133,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed channel for frozen values or NaNs.
+campaign7-run134,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed_kts and altitude_ft channels for constant values or NaNs
+campaign7-run134,400.0,445.0,nominal,unknown,0.0,False,"Check the airspeed sensor for any signs of malfunction or contamination, and verify the calibration of the airspeed channel."
+campaign7-run135,418.9999999997696,463.9999999997696,stuck_airspeed,unknown,0.0,False,Check sensor data for NaNs and verify pitot block functionality
+campaign7-run136,250.0,295.0,nominal,unknown,0.0,False,"Check for pitot block or sensor dropout by inspecting airspeed_kts and altitude_ft channels for frozen values or NaNs, and verify that all other channels are functioning correctly."
+campaign7-run136,400.0,445.0,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run137,535.9999999996633,580.9999999996633,altimeter_drift,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run138,252.79999999992077,297.7999999999208,altimeter_drift,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run139,260.29999999991395,305.29999999991395,stuck_airspeed,unknown,0.0,False,Check sensor data for NaN values and verify pitot block functionality.
+campaign7-run139,428.19999999976125,473.19999999976125,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run140,250.0,295.0,nominal,unknown,0.0,False,"Check for stuck airspeed by verifying that the airspeed_kts channel has a single, constant value over the entire window."
+campaign7-run140,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run141,250.0,295.0,nominal,unknown,0.0,False,"Check airspeed_kts for any signs of pitot block or sensor dropout, and verify that the longest constant stretch is within expected limits."
+campaign7-run141,400.0,445.0,nominal,unknown,0.0,False,"Check for sensor dropout or pitot block by inspecting airspeed_kts and other channels for constant values or NaNs, and verify the airspeed sensor's calibration and functionality."
+campaign7-run142,133.60000000002918,178.60000000002918,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run143,250.0,295.0,nominal,unknown,0.0,False,"Check for stuck or dropped airspeed and RPM channels, and verify sensor connectivity."
+campaign7-run143,400.0,445.0,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run144,250.0,295.0,nominal,unknown,0.0,False,"Check sensor data for any signs of dropout or pitot block failure, and verify airspeed sensor calibration"
+campaign7-run144,400.0,445.0,nominal,unknown,0.0,False,Check for sensor dropout or pitot block by inspecting airspeed and RPM channels for constant values or NaNs over the window.
+campaign7-run145,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed_kts and other channels for NaN values and constant values over time.
+campaign7-run145,400.0,445.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed_kts and altitude_ft channels for constant values or NaNs
+campaign7-run146,250.0,295.0,nominal,unknown,0.0,False,Check for pitot block or sensor dropout by inspecting airspeed and altitude channels for constant values or NaNs over the window.
+campaign7-run146,400.0,445.0,nominal,unknown,0.0,False,"Check the airspeed sensor for any signs of malfunction or contamination, and verify the calibration of the airspeed channel."
+campaign7-run147,245.99999999992696,290.99999999992696,altimeter_bias,unknown,0.0,False,Check the altimeter's performance and verify its calibration.
+campaign7-run147,346.7999999998353,391.7999999998353,altimeter_bias,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run147,428.29999999976116,473.29999999976116,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."
+campaign7-run148,366.29999999981754,411.29999999981754,altimeter_bias,unknown,0.0,False,Check the altimeter's performance and verify its calibration.
+campaign7-run148,428.7999999997607,473.7999999997607,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of malfunction or contamination, and verify that the pitot block is functioning correctly."
+campaign7-run149,152.00000000001245,197.00000000001245,altimeter_drift,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run149,205.99999999996334,250.99999999996334,altimeter_drift,unknown,0.0,False,Check the altimeter's bias and drift values to ensure they are within nominal ranges and not causing the alt_rate alarm.
+campaign7-run149,251.69999999992177,296.6999999999218,altimeter_drift,unknown,0.0,False,"Check altimeter data for bias and drift, and verify that the altimeter is functioning correctly."
+campaign7-run149,428.8999999997606,473.8999999997606,nominal,unknown,0.0,False,"Check airspeed sensor for any signs of dropout or pitot block failure, and verify that the altimeter is functioning correctly."

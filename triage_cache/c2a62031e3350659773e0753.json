@@ -1,0 +1,19 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 250.0 s to 295.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 99.91, std 0.511, range [98.7, 101.9], slope -0.0026/s, 27 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6002.08, std 3.668, range [5991.0, 6013.0], slope -0.0821/s, 22 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -6.0, std 38.947, range [-100.0, 100.0], slope -0.2517/s, 20 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 0.92, std 0.229, range [0.35, 1.42], slope 0.0007/s, 92 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.15, std 0.885, range [-1.67, 1.4], slope 0.0142/s, 232 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 89.69, std 0.482, range [88.5, 91.1], slope -0.0031/s, 25 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2461.16, std 17.938, range [2420.0, 2500.0], slope -0.4234/s, 9 distinct values, longest constant stretch 1.2 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: airspeed_kts has 27 distinct values, longest constant stretch 0.3 s",
+      "staleness: altitude_ft has 22 distinct values, longest constant stretch 0.3 s",
+      "staleness: vertical_speed_fpm has 20 distinct values, longest constant stretch 0.4 s",
+      "staleness: pitch_deg has 92 distinct values, longest constant stretch 0.2 s",
+      "staleness: roll_deg has 232 distinct values, longest constant stretch 0.2 s",
+      "staleness: heading_deg has 25 distinct values, longest constant stretch 0.3 s",
+      "staleness: rpm has 9 distinct values, longest constant stretch 1.2 s"
+    ],
+    "recommended_check": "Check for sensor dropout or pitot block by inspecting airspeed_kts and altitude_ft channels for NaN values and constant values over time."
+  }
+}

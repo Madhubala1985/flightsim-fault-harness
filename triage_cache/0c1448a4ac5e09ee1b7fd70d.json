@@ -1,0 +1,16 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 400.0 s to 445.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 99.18, std 0.778, range [97.4, 102.0], slope 0.0172/s, 42 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - altitude_ft: mean 6001.64, std 8.036, range [5961.0, 6014.0], slope -0.199/s, 42 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -42.58, std 117.271, range [-540.0, 90.0], slope -3.9099/s, 42 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 0.31, std 0.92, range [-3.58, 1.14], slope -0.0363/s, 135 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.38, std 0.905, range [-1.88, 1.26], slope -0.0073/s, 227 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 360.18, std 0.454, range [358.9, 361.4], slope 0.0012/s, 114 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2451.93, std 38.059, range [2270.0, 2490.0], slope -0.76/s, 21 distinct values, longest constant stretch 1.2 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: staleness: some channel has shown the same value (or NaN) for more than 3 s",
+      "staleness: staleness: some channel has shown the same value (or NaN) for more than 3 s",
+      "iforest: iforest: Isolation Forest on windowed channel statistics finds the window unusual",
+      "iforest: iforest: Isolation Forest on windowed channel statistics finds the window unusual"
+    ],
+    "recommended_check": "Check for sensor dropout or pitot block by inspecting airspeed and altitude channels for constant values or NaNs over the window."
+  }
+}

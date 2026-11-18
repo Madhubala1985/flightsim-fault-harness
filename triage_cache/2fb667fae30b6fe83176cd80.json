@@ -1,0 +1,16 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 123.0 s to 168.0 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=138.1 s, active 54% of window, peak score 93.95 nominal-sigma\n  - airspeed: first at t=138.0 s, active 56% of window, peak score 113.65 nominal-sigma\n  - energy: first at t=138.1 s, active 54% of window, peak score 75.29 nominal-sigma\n  - iforest: first at t=139.3 s, active 64% of window, peak score 0.28 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 83.57, std 14.237, range [55.5, 103.9], slope -0.7318/s, 219 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6041.89, std 133.223, range [5829.0, 6252.0], slope 8.0995/s, 248 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 495.7, std 1452.133, range [-2730.0, 4600.0], slope -8.9876/s, 253 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 5.74, std 18.646, range [-45.32, 63.55], slope 0.0111/s, 367 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -4.21, std 13.458, range [-42.68, 39.99], slope -0.101/s, 405 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 8.06, std 11.323, range [-3.3, 43.9], slope 0.0247/s, 231 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2724.41, std 58.441, range [2550.0, 2820.0], slope 1.4018/s, 28 distinct values, longest constant stretch 0.8 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "engine_power_loss",
+    "confidence": 0.8,
+    "evidence": [
+      "airspeed: peak score 113.65 nominal-sigma",
+      "energy: peak score 75.29 nominal-sigma",
+      "rpm: mean 2724.41, std 58.441, range [2550.0, 2820.0]",
+      "airspeed_kts: slope -0.7318/s"
+    ],
+    "recommended_check": "Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation."
+  }
+}

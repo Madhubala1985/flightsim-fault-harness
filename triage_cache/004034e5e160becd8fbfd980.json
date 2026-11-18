@@ -1,0 +1,19 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 250.0 s to 295.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 101.3, std 0.576, range [99.3, 102.8], slope 0.002/s, 31 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - altitude_ft: mean 5994.83, std 3.759, range [5984.0, 6005.0], slope -0.0884/s, 20 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 10.02, std 36.953, range [-80.0, 90.0], slope -0.4778/s, 18 distinct values, longest constant stretch 0.5 s, NaN fraction 0.0\n  - pitch_deg: mean 0.52, std 0.216, range [-0.09, 1.01], slope 0.0004/s, 91 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean 0.05, std 0.887, range [-1.6, 1.66], slope 0.0137/s, 237 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - heading_deg: mean 90.38, std 0.495, range [88.8, 91.7], slope -0.0036/s, 28 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2476.13, std 18.189, range [2430.0, 2510.0], slope -0.3841/s, 9 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: airspeed_kts has 31 distinct values, longest constant stretch 0.2 s",
+      "staleness: altitude_ft has 20 distinct values, longest constant stretch 0.2 s",
+      "staleness: vertical_speed_fpm has 18 distinct values, longest constant stretch 0.5 s",
+      "staleness: pitch_deg has 91 distinct values, longest constant stretch 0.2 s",
+      "staleness: roll_deg has 237 distinct values, longest constant stretch 0.3 s",
+      "staleness: heading_deg has 28 distinct values, longest constant stretch 0.3 s",
+      "staleness: rpm has 9 distinct values, longest constant stretch 1.0 s"
+    ],
+    "recommended_check": "Check for stuck airspeed or sensor dropout by inspecting the airspeed_kts channel for a single, constant value or NaNs across the entire window."
+  }
+}

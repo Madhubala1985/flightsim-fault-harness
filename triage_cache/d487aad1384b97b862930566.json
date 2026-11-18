@@ -1,0 +1,16 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 161.2 s to 206.2 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=163.7 s, active 23% of window, peak score 17.56 nominal-sigma\n  - airspeed: first at t=162.9 s, active 57% of window, peak score 20.14 nominal-sigma\n  - energy: first at t=161.2 s, active 65% of window, peak score 22.43 nominal-sigma\n  - iforest: first at t=164.3 s, active 3% of window, peak score 0.23 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 88.15, std 7.573, range [79.1, 106.6], slope 0.4754/s, 173 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6085.4, std 27.924, range [6024.0, 6144.0], slope 0.4327/s, 109 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -25.57, std 387.05, range [-860.0, 830.0], slope -9.7834/s, 138 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 1.71, std 8.527, range [-17.52, 28.13], slope -0.0836/s, 372 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean 2.48, std 7.926, range [-9.01, 24.67], slope 0.3055/s, 387 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 360.35, std 3.357, range [357.4, 378.4], slope 0.0878/s, 136 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2806.12, std 13.802, range [2770.0, 2840.0], slope 0.8123/s, 8 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "engine_power_loss",
+    "confidence": 0.85,
+    "evidence": [
+      "energy: first at t=161.2 s, active 65% of window, peak score 22.43 nominal-sigma",
+      "airspeed: first at t=162.9 s, active 57% of window, peak score 20.14 nominal-sigma",
+      "rpm: mean 2806.12, std 13.802, range [2770.0, 2840.0]",
+      "energy: first at t=161.2 s, active 65% of window, peak score 22.43 nominal-sigma"
+    ],
+    "recommended_check": "Check the engine's throttle authority and RPM to ensure it is within nominal ranges."
+  }
+}

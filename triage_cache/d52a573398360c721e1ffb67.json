@@ -1,0 +1,14 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 250.0 s to 295.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 99.35, std 0.56, range [97.5, 101.0], slope -0.0022/s, 32 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6018.87, std 3.632, range [6006.0, 6028.0], slope -0.0785/s, 22 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -16.38, std 39.18, range [-130.0, 110.0], slope -0.3386/s, 20 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 0.81, std 0.224, range [0.27, 1.39], slope 0.0008/s, 95 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.09, std 0.886, range [-1.72, 1.46], slope 0.0138/s, 230 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - heading_deg: mean 90.15, std 0.485, range [88.8, 91.2], slope -0.0028/s, 24 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2470.09, std 17.676, range [2430.0, 2500.0], slope -0.3932/s, 8 distinct values, longest constant stretch 1.2 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: staleness alarm for airspeed_kts with longest constant stretch 0.3 s and NaN fraction 0.0",
+      "staleness: staleness alarm for rpm with longest constant stretch 1.2 s and NaN fraction 0.0"
+    ],
+    "recommended_check": "Check for stuck or dropped airspeed and RPM channels, and verify sensor connectivity."
+  }
+}

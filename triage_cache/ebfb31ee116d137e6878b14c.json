@@ -1,0 +1,14 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 114.0 s to 159.0 s (10 Hz sensor data).\n\nAlarms:\n  - airspeed: first at t=129.5 s, active 44% of window, peak score 14.55 nominal-sigma\n  - energy: first at t=129.0 s, active 67% of window, peak score 24.66 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 78.59, std 17.597, range [48.8, 100.5], slope -1.3306/s, 256 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 5875.75, std 57.779, range [5753.0, 5949.0], slope 4.3318/s, 176 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 259.31, std 115.38, range [20.0, 450.0], slope -8.2476/s, 43 distinct values, longest constant stretch 0.5 s, NaN fraction 0.0\n  - pitch_deg: mean 4.73, std 1.753, range [2.63, 8.98], slope 0.1289/s, 273 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.11, std 1.158, range [-2.4, 2.99], slope 0.0161/s, 266 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - heading_deg: mean 1.4, std 1.469, range [-1.6, 4.4], slope 0.0894/s, 96 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 1699.36, std 631.985, range [1170.0, 2730.0], slope -42.1194/s, 71 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "engine_power_loss",
+    "confidence": 0.85,
+    "evidence": [
+      "airspeed: first at t=129.5 s, active 44% of window, peak score 14.55 nominal-sigma",
+      "energy: first at t=129.0 s, active 67% of window, peak score 24.66 nominal-sigma"
+    ],
+    "recommended_check": "Check engine power loss by inspecting RPM and throttle authority data for any signs of reduction or loss of authority."
+  }
+}

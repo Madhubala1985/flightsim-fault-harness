@@ -1,0 +1,14 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 428.7 s to 473.7 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=444.4 s, active 1% of window, peak score 8.48 nominal-sigma\n  - airspeed: first at t=443.7 s, active 2% of window, peak score 6.55 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 100.78, std 1.182, range [97.8, 103.8], slope 0.0223/s, 51 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 5896.31, std 96.585, range [5712.0, 6013.0], slope -7.2639/s, 221 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -346.08, std 236.015, range [-580.0, 110.0], slope -14.6997/s, 52 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean -1.02, std 1.265, range [-3.18, 1.42], slope -0.0695/s, 139 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - roll_deg: mean -0.17, std 0.905, range [-1.86, 1.38], slope 0.0188/s, 236 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - heading_deg: mean -0.36, std 0.513, range [-1.6, 1.0], slope 0.0044/s, 106 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2253.64, std 157.345, range [2110.0, 2510.0], slope -10.7553/s, 41 distinct values, longest constant stretch 0.7 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "alt_rate: first at t=444.4 s, active 1% of window, peak score 8.48 nominal-sigma",
+      "airspeed: first at t=443.7 s, active 2% of window, peak score 6.55 nominal-sigma"
+    ],
+    "recommended_check": "Check the altimeter's bias and drift values, and verify the pitot block's functionality."
+  }
+}

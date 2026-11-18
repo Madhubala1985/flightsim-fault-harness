@@ -1,0 +1,15 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 123.1 s to 168.1 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=138.2 s, active 49% of window, peak score 91.31 nominal-sigma\n  - airspeed: first at t=138.1 s, active 52% of window, peak score 103.09 nominal-sigma\n  - energy: first at t=139.1 s, active 50% of window, peak score 66.75 nominal-sigma\n  - iforest: first at t=139.3 s, active 58% of window, peak score 0.29 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 83.49, std 12.378, range [60.0, 101.7], slope -0.6271/s, 217 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6011.23, std 117.396, range [5812.0, 6203.0], slope 6.8973/s, 227 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 378.69, std 1322.76, range [-2660.0, 4280.0], slope -17.7142/s, 256 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - pitch_deg: mean 4.28, std 17.221, range [-45.99, 59.54], slope -0.0589/s, 372 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -3.98, std 12.994, range [-47.54, 33.85], slope -0.0695/s, 402 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 5.95, std 9.163, range [-5.0, 34.3], slope -0.0117/s, 248 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2730.2, std 49.42, range [2570.0, 2820.0], slope 1.9393/s, 26 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "alt_rate: first at t=138.2 s, active 49% of window, peak score 91.31 nominal-sigma",
+      "energy: first at t=139.1 s, active 50% of window, peak score 66.75 nominal-sigma",
+      "iforest: first at t=139.3 s, active 58% of window, peak score 0.29 nominal-sigma"
+    ],
+    "recommended_check": "Check the altimeter's bias and drift values, and verify the engine's power output and RPM values."
+  }
+}

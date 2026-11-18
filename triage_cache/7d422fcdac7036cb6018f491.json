@@ -1,0 +1,13 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 400.0 s to 445.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 100.09, std 0.779, range [98.1, 103.3], slope 0.0203/s, 44 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6001.28, std 7.889, range [5959.0, 6013.0], slope -0.2184/s, 41 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -26.76, std 115.834, range [-470.0, 90.0], slope -3.7805/s, 41 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 0.46, std 0.925, range [-3.27, 1.26], slope -0.0363/s, 132 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.68, std 0.912, range [-2.3, 0.95], slope -0.0079/s, 228 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - heading_deg: mean 0.48, std 0.482, range [-0.9, 1.6], slope 0.0015/s, 109 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - rpm: mean 2459.27, std 38.002, range [2270.0, 2510.0], slope -0.7561/s, 24 distinct values, longest constant stretch 0.8 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: airspeed_kts has shown the same value (or NaN) for more than 3 s"
+    ],
+    "recommended_check": "Check for sensor dropout or pitot block by inspecting airspeed_kts and other channels for constant values or NaNs, and verify the airspeed sensor's calibration and functionality."
+  }
+}

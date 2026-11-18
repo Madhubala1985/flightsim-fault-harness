@@ -1,0 +1,14 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 400.0 s to 445.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 100.35, std 0.781, range [98.5, 103.6], slope 0.0175/s, 46 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 5994.38, std 8.063, range [5953.0, 6007.0], slope -0.2177/s, 41 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -46.11, std 116.009, range [-490.0, 90.0], slope -3.8926/s, 42 distinct values, longest constant stretch 0.5 s, NaN fraction 0.0\n  - pitch_deg: mean 0.14, std 0.926, range [-3.86, 0.99], slope -0.0359/s, 136 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.33, std 0.912, range [-1.91, 1.29], slope -0.0076/s, 243 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 2.21, std 0.485, range [0.7, 3.7], slope 0.0046/s, 38 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - rpm: mean 2469.24, std 38.636, range [2280.0, 2510.0], slope -0.7871/s, 22 distinct values, longest constant stretch 1.4 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: staleness alarm for airspeed_kts with longest constant stretch 0.3 s",
+      "staleness: staleness alarm for altitude_ft with longest constant stretch 0.3 s"
+    ],
+    "recommended_check": "Check for pitot block or sensor dropout by inspecting airspeed_kts and altitude_ft channels for constant values or NaNs"
+  }
+}

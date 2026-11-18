@@ -1,0 +1,15 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 146.8 s to 191.8 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=162.7 s, active 22% of window, peak score 31.18 nominal-sigma\n  - airspeed: first at t=162.2 s, active 28% of window, peak score 48.85 nominal-sigma\n  - energy: first at t=161.8 s, active 60% of window, peak score 35.65 nominal-sigma\n  - iforest: first at t=163.3 s, active 14% of window, peak score 0.26 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 90.73, std 6.895, range [82.7, 101.9], slope -0.4271/s, 108 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - altitude_ft: mean 6048.16, std 61.3, range [5942.0, 6125.0], slope 4.2706/s, 117 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 214.92, std 421.093, range [-660.0, 1690.0], slope -5.4647/s, 139 distinct values, longest constant stretch 0.8 s, NaN fraction 0.0\n  - pitch_deg: mean 2.96, std 9.56, range [-18.64, 35.23], slope 0.0033/s, 385 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean 0.75, std 3.894, range [-8.85, 12.85], slope 0.0637/s, 370 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean -0.02, std 1.765, range [-3.7, 7.4], slope -0.0561/s, 232 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2716.56, std 117.581, range [2500.0, 2820.0], slope 7.4363/s, 29 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "engine_power_loss",
+    "confidence": 0.8,
+    "evidence": [
+      "energy: first at t=161.8 s, active 60% of window, peak score 35.65 nominal-sigma",
+      "airspeed: first at t=162.2 s, active 28% of window, peak score 48.85 nominal-sigma",
+      "rpm: mean 2716.56, std 117.581, range [2500.0, 2820.0], slope 7.4363/s, 29 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0"
+    ],
+    "recommended_check": "Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation."
+  }
+}

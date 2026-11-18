@@ -72,14 +72,22 @@ class OllamaBackend:
         self.base_url = base_url.rstrip("/")
 
     def complete(self, system: str, user: str) -> dict:
-        schema = json.dumps(TriageReport.model_json_schema())
+        schema = TriageReport.model_json_schema()
         body = {
             "model": self.model,
             "messages": [
-                {"role": "system", "content": f"{system}\n\nReply with JSON matching: {schema}"},
+                {
+                    "role": "system",
+                    "content": f"{system}\n\nReply with JSON matching: {json.dumps(schema)}",
+                },
                 {"role": "user", "content": user},
             ],
-            "response_format": {"type": "json_object"},
+            # Constrained decoding: small local models echo or drop fields in
+            # free-form JSON mode; json_schema makes validity a decoder property.
+            "response_format": {
+                "type": "json_schema",
+                "json_schema": {"name": "triage_report", "schema": schema},
+            },
             "temperature": 0,
         }
         req = urllib.request.Request(

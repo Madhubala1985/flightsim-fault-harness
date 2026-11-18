@@ -1,0 +1,16 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 176.1 s to 221.1 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=191.1 s, active 22% of window, peak score 88.65 nominal-sigma\n  - airspeed: first at t=191.3 s, active 53% of window, peak score 106.57 nominal-sigma\n  - energy: first at t=191.2 s, active 38% of window, peak score 76.74 nominal-sigma\n  - iforest: first at t=192.3 s, active 24% of window, peak score 0.29 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 93.79, std 11.703, range [64.6, 108.3], slope 0.0994/s, 223 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6077.75, std 76.462, range [5934.0, 6224.0], slope 3.0445/s, 170 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 114.01, std 929.883, range [-1280.0, 3810.0], slope -15.4182/s, 134 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 2.26, std 10.378, range [-15.2, 57.75], slope -0.1108/s, 242 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean 6.26, std 15.697, range [-31.98, 32.61], slope 0.667/s, 380 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 21.99, std 24.687, range [-1.6, 77.5], slope 1.6467/s, 328 distinct values, longest constant stretch 0.5 s, NaN fraction 0.0\n  - rpm: mean 2677.05, std 161.538, range [2270.0, 2850.0], slope 10.9382/s, 49 distinct values, longest constant stretch 0.8 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "engine_power_loss",
+    "confidence": 0.8,
+    "evidence": [
+      "airspeed: peak score 106.57 nominal-sigma",
+      "energy: peak score 76.74 nominal-sigma",
+      "rpm: mean 2677.05, std 161.538, range [2270.0, 2850.0]",
+      "airspeed_kts: range [64.6, 108.3]"
+    ],
+    "recommended_check": "Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation."
+  }
+}

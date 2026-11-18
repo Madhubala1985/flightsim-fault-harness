@@ -1,0 +1,14 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 400.0 s to 445.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 99.55, std 0.753, range [98.1, 102.5], slope 0.0187/s, 42 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - altitude_ft: mean 6008.69, std 8.019, range [5969.0, 6020.0], slope -0.1864/s, 41 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -24.93, std 115.476, range [-470.0, 100.0], slope -3.9311/s, 42 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - pitch_deg: mean 0.71, std 0.931, range [-3.16, 1.5], slope -0.0356/s, 136 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean 0.01, std 0.915, range [-1.55, 1.55], slope -0.0072/s, 237 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 0.23, std 0.468, range [-1.0, 1.4], slope 0.0052/s, 104 distinct values, longest constant stretch 0.5 s, NaN fraction 0.0\n  - rpm: mean 2468.8, std 37.84, range [2280.0, 2510.0], slope -0.7329/s, 23 distinct values, longest constant stretch 0.9 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: staleness alarm for airspeed_kts with longest constant stretch 0.2 s",
+      "staleness: staleness alarm for pitch_deg with longest constant stretch 0.2 s"
+    ],
+    "recommended_check": "Check sensor data for airspeed_kts and pitch_deg for any signs of stuck or constant values, and verify the pitot block is functioning correctly."
+  }
+}

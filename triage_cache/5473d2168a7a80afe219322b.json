@@ -1,0 +1,15 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 221.9 s to 266.9 s (10 Hz sensor data).\n\nAlarms:\n  - alt_rate: first at t=234.4 s, active 9% of window, peak score 15.16 nominal-sigma\n  - airspeed: first at t=221.9 s, active 42% of window, peak score 19.03 nominal-sigma\n  - energy: first at t=221.9 s, active 81% of window, peak score 24.18 nominal-sigma\n  - iforest: first at t=222.3 s, active 3% of window, peak score 0.23 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 101.17, std 10.353, range [84.9, 115.4], slope 0.7517/s, 209 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6127.45, std 46.347, range [6042.0, 6212.0], slope -3.1318/s, 155 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -126.21, std 294.395, range [-470.0, 730.0], slope -11.9681/s, 104 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 0.55, std 5.118, range [-12.9, 26.62], slope -0.0903/s, 219 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean 1.1, std 3.163, range [-3.64, 13.2], slope -0.1094/s, 245 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - heading_deg: mean 88.15, std 2.077, range [76.4, 91.3], slope 0.1178/s, 82 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2775.08, std 123.113, range [2350.0, 2860.0], slope -5.0127/s, 44 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "engine_power_loss",
+    "confidence": 0.8,
+    "evidence": [
+      "energy: first at t=221.9 s, active 81% of window, peak score 24.18 nominal-sigma",
+      "airspeed: first at t=221.9 s, active 42% of window, peak score 19.03 nominal-sigma",
+      "rpm: mean 2775.08, std 123.113, range [2350.0, 2860.0], slope -5.0127/s"
+    ],
+    "recommended_check": "Check engine power loss by inspecting the throttle authority and RPM data for any signs of reduction or fluctuation."
+  }
+}

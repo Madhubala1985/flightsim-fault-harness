@@ -1,0 +1,16 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 250.0 s to 295.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 99.87, std 0.55, range [98.2, 101.4], slope 0.0039/s, 30 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6009.73, std 3.915, range [5999.0, 6023.0], slope -0.1058/s, 23 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean 0.22, std 36.349, range [-90.0, 80.0], slope -0.3535/s, 18 distinct values, longest constant stretch 0.5 s, NaN fraction 0.0\n  - pitch_deg: mean 0.9, std 0.217, range [0.27, 1.42], slope 0.0008/s, 96 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.16, std 0.893, range [-1.76, 1.47], slope 0.0134/s, 243 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - heading_deg: mean 91.13, std 0.487, range [89.9, 92.3], slope -0.0041/s, 25 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2462.29, std 18.156, range [2430.0, 2500.0], slope -0.4194/s, 8 distinct values, longest constant stretch 1.3 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: airspeed_kts has 30 distinct values, longest constant stretch 0.3 s",
+      "staleness: altitude_ft has 23 distinct values, longest constant stretch 0.3 s",
+      "staleness: vertical_speed_fpm has 18 distinct values, longest constant stretch 0.5 s",
+      "staleness: rpm has 8 distinct values, longest constant stretch 1.3 s"
+    ],
+    "recommended_check": "Check for sensor dropout or pitot block by inspecting the longest constant stretches and NaN fractions for each channel."
+  }
+}

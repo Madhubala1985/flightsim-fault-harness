@@ -1,0 +1,13 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 429.3 s to 474.3 s (10 Hz sensor data).\n\nAlarms:\n  - iforest: first at t=444.3 s, active 1% of window, peak score 0.23 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 101.96, std 1.182, range [99.2, 104.9], slope 0.0185/s, 52 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 5891.16, std 97.639, range [5710.0, 6011.0], slope -7.3649/s, 218 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -359.62, std 233.592, range [-580.0, 110.0], slope -14.3048/s, 53 distinct values, longest constant stretch 0.5 s, NaN fraction 0.0\n  - pitch_deg: mean -1.47, std 2.883, range [-13.43, 13.05], slope -0.0545/s, 312 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.36, std 2.784, range [-12.16, 10.84], slope 0.0054/s, 347 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - heading_deg: mean 0.92, std 0.499, range [-0.3, 2.3], slope 0.0027/s, 63 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - rpm: mean 2241.06, std 156.024, range [2100.0, 2500.0], slope -10.6095/s, 40 distinct values, longest constant stretch 0.9 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "iforest: first at t=444.3 s, active 1% of window, peak score 0.23 nominal-sigma"
+    ],
+    "recommended_check": "Check the Isolation Forest algorithm's sensitivity to noise and outliers, and consider re-running the analysis with a different threshold or noise reduction technique."
+  }
+}

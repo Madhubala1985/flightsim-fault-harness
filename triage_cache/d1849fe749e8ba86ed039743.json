@@ -1,0 +1,13 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 400.0 s to 445.0 s (10 Hz sensor data).\n\nAlarms:\n  - airspeed: first at t=444.0 s, active 0% of window, peak score 5.32 nominal-sigma\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 99.04, std 0.807, range [97.2, 102.1], slope 0.0195/s, 46 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - altitude_ft: mean 5983.48, std 8.029, range [5941.0, 5995.0], slope -0.2167/s, 43 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -34.16, std 116.491, range [-500.0, 90.0], slope -3.9349/s, 45 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - pitch_deg: mean 0.51, std 0.927, range [-3.36, 1.37], slope -0.0361/s, 138 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.37, std 0.909, range [-2.16, 1.19], slope -0.0077/s, 225 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - heading_deg: mean 359.37, std 0.474, range [358.1, 360.6], slope 0.0029/s, 51 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - rpm: mean 2458.04, std 38.594, range [2270.0, 2500.0], slope -0.7623/s, 23 distinct values, longest constant stretch 1.2 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "airspeed: first at t=444.0 s, active 0% of window, peak score 5.32 nominal-sigma"
+    ],
+    "recommended_check": "Check the airspeed sensor for any signs of malfunction or contamination, and verify the calibration of the airspeed channel."
+  }
+}

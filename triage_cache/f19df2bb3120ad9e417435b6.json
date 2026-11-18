@@ -1,0 +1,19 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 250.0 s to 295.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 99.94, std 0.543, range [98.5, 101.7], slope -0.0022/s, 31 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6019.86, std 3.962, range [6010.0, 6030.0], slope -0.1069/s, 21 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -5.76, std 37.812, range [-110.0, 70.0], slope -0.2051/s, 19 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - pitch_deg: mean 1.04, std 0.221, range [0.54, 1.58], slope 0.0005/s, 90 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - roll_deg: mean 0.27, std 0.891, range [-1.39, 1.83], slope 0.0137/s, 232 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 89.62, std 0.469, range [88.2, 90.7], slope -0.0015/s, 23 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - rpm: mean 2479.64, std 17.798, range [2450.0, 2510.0], slope -0.4257/s, 7 distinct values, longest constant stretch 1.1 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: airspeed_kts has 31 distinct values, longest constant stretch 0.3 s",
+      "staleness: altitude_ft has 21 distinct values, longest constant stretch 0.3 s",
+      "staleness: vertical_speed_fpm has 19 distinct values, longest constant stretch 0.3 s",
+      "staleness: pitch_deg has 90 distinct values, longest constant stretch 0.3 s",
+      "staleness: roll_deg has 232 distinct values, longest constant stretch 0.2 s",
+      "staleness: heading_deg has 23 distinct values, longest constant stretch 0.4 s",
+      "staleness: rpm has 7 distinct values, longest constant stretch 1.1 s"
+    ],
+    "recommended_check": "Check for stuck airspeed by verifying that the airspeed_kts channel has not been stuck for an extended period of time."
+  }
+}

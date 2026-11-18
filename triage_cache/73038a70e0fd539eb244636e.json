@@ -1,0 +1,13 @@
+{
+  "backend": "ollama",
+  "model": "llama3.2:3b",
+  "user": "Window: t = 250.0 s to 295.0 s (10 Hz sensor data).\n\nAlarms:\n  (none)\n\nSensor channel summary over the window:\n  - airspeed_kts: mean 100.92, std 0.53, range [99.2, 102.2], slope 0.0001/s, 29 distinct values, longest constant stretch 0.3 s, NaN fraction 0.0\n  - altitude_ft: mean 6007.73, std 3.858, range [5995.0, 6021.0], slope -0.098/s, 23 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - vertical_speed_fpm: mean -7.89, std 35.631, range [-90.0, 70.0], slope -0.4161/s, 17 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - pitch_deg: mean 0.81, std 0.214, range [0.29, 1.34], slope 0.0005/s, 94 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - roll_deg: mean -0.1, std 0.885, range [-1.61, 1.41], slope 0.014/s, 228 distinct values, longest constant stretch 0.2 s, NaN fraction 0.0\n  - heading_deg: mean 90.26, std 0.478, range [88.7, 91.7], slope -0.0032/s, 27 distinct values, longest constant stretch 0.4 s, NaN fraction 0.0\n  - rpm: mean 2466.93, std 18.389, range [2430.0, 2510.0], slope -0.435/s, 9 distinct values, longest constant stretch 1.0 s, NaN fraction 0.0",
+  "response": {
+    "fault_type": "unknown",
+    "confidence": 0.0,
+    "evidence": [
+      "staleness: longest constant stretch 0.3 s, NaN fraction 0.0"
+    ],
+    "recommended_check": "Check for pitot block or sensor dropout by inspecting airspeed channel for unusual patterns or values."
+  }
+}
