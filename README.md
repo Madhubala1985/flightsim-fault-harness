@@ -55,6 +55,13 @@ Optional: `make triage` runs the LLM agent over the campaign's alarms. It needs
 local model. Responses are cached under `triage_cache/`; `make results` reads
 that cache offline and never calls the network.
 
+**Status of the triage results:** `triage_cache/` is empty in this repository
+because no API key was available when it was built. The key is loaded from
+`.env`, which is git-ignored, and is never committed. The "Triage agent"
+section below therefore shows a skip notice; the code and its offline tests
+are complete, and running `make triage` once with a key (or a local Ollama
+model) fills the cache and the table.
+
 Other entry points: `python -m fsfh fly --scenario basic --seed 1 --out runs/`
 for one flight, `python -m fsfh plot <run_dir>` for truth vs sensors with
 fault windows shaded, `python scripts/gain_sweep.py` for how the autopilot
